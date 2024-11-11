@@ -6,23 +6,23 @@
         background-size: cover;
     }
 
-    header {
+    body header {
         display: flex;
         justify-content: center;
-        background-color: #f8ca33;
+        background-color: #f8b333;
         margin: 0;
         border: 0;
         height: 8dvh;
     }
 
-    header img{
+    body header img{
         margin: 8px;
         margin-left: 0px;
         margin-right: 36px;
         margin-bottom: 0px;
     }
 
-    header h1{
+    body header h1{
         color: #9c0207;
         font-family: "Slackey", sans-serif;
         font-weight: 400;
@@ -32,14 +32,14 @@
     nav {
         display: flex;
         justify-content: center;
-        background-color: #fff068;
+        background-color: #fcf083;
         overflow: hidden;
         height: 6dvh;
     }
 
     nav a{
         float: right;
-        color: #b64818;
+        color: #df6c00;
         padding: 14px 14px;
         text-decoration: none;
         font-size: 16px;
@@ -52,13 +52,22 @@
         color: #692102;
     }
 
-    nav a.active {
-        background-color: #04AA6D;
-        color: white;
+    #link_visitado{
+        color: #571c02;
     }
+    
 
     main {
         margin: 8px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main article {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #ffbb46;
     }
 }
 
