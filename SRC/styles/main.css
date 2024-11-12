@@ -28,6 +28,15 @@ header {
     background-color: #201d1e;
 }
 
+.h2-custom{
+    display: inline;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Slackey", serif;
+    color: white;
+    margin: 0.5rem 0;
+}
+
 /*Hacer responsive min 768p*/
 /*Estilos para el contenedor navegador*/
 #top-nav{
@@ -66,6 +75,44 @@ header {
     max-width: 1200px;
 }
 
+/*Clase general para alicar a las filas de información*/
+.content-alley{
+    margin-bottom: 22px;
+}
+
+/*Clase general para contener articulos. Aplicado un display flex para manejar sus contenidos*/
+.flex-section{
+    display: flex;
+    background-color: #393837;
+}
+
+/*clase general para los contenedores de la izquierda*/
+.left-container{
+    padding: 1.25rem;
+    width: 420px;
+    background-color: #201d1e;
+}
+
+.left-container-atch{
+    padding: 1.25rem;
+    background-color: #393837;
+}
+
+
+.information-container
+
+/*clase general para los contenedores de imagenes*/
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*clase general para las imagenes del contenedor de imagenes*/
+.image-container img{
+    height: 230px;
+}
 /*Estilos dinamicos para pantallas de menos de 768px*/
 @media screen and (max-width: 768px) {
     /*Se cambia el logo y su comportamiento ademas del tamaño*/
