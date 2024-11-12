@@ -12,10 +12,12 @@ body {
 body header {
     display: flex;
     justify-content: center;
+
     background-color: #f8b333;
     margin: 0;
     border: 0;
     height: 8dvh;
+    min-height: 100px;
 }
 
 body header img{
@@ -38,6 +40,7 @@ nav {
     background-color: #fcf083;
     overflow: hidden;
     height: 6dvh;
+    min-height: 40px;
 }
 
 nav a{
@@ -49,6 +52,7 @@ nav a{
     font-family: "Slackey", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
 nav a:hover {
@@ -84,11 +88,8 @@ main {
     text-align: center;
     background-color: #f1f1f1;
     border-radius: 15px;  
-    border-style: solid;
-    border-width: 5px;
     border-color: #571c02;
     background-image: linear-gradient(to bottom right, #ffbb46, #fd9138);
-
 }
 
 .card img {
@@ -97,7 +98,7 @@ main {
     margin-bottom: 8px;
     border-radius: 15px;  
     border-style: solid;
-    border-width: 3px;
+    border-width: 5px;
     border-color: #571c02;
 }
 
@@ -106,6 +107,40 @@ main {
     font-family: "Slackey", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.card .informacion{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+footer { 
+    width: 100%;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+    height: 18dvh;
+    min-height: 20px;
+    background-image: url(/SRC/resources/index_elements/footer-background.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+footer a{
+    float: right;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 15dvh;
 }
 
 @media screen and (max-width: 900px) {
@@ -134,5 +169,17 @@ main {
       flex: 1 1 100%;
       margin-bottom: 20px;
       height: none;
+    }
+
+    footer a{
+        float: right;
+        color: #000000;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: "Slackey", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        padding-top: 14dvh;
     }
 }
