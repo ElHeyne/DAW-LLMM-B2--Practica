@@ -35,18 +35,20 @@ header {
     /**/
 }
 
-/*Estilos para*/
+/*Estilos para los elementos de lista no ordenada dentro de top-nav. retirada de estilos y modificadas las proporciones*/
 #top-nav ul{
     list-style: none;
     margin-top: 19px;
     height: 29px;
 }
 
+/*Estilos para los hijos de listas no ordenadas de top-nav. Modificado el display para mostrarse uno al lado del otro*/
 #top-nav ul li{
     display: inline-block;
     margin-left: 2.5rem;
 }
 
+/*Estilos para los links de los hijos de las listas no ordenadas de top-nav. Modificada la apariencia y el tamaño*/
 #top-nav ul li .nav-link{
     font-size: 1.25rem;
     text-decoration: none;
@@ -54,6 +56,8 @@ header {
     color: white;
 }
 
+/*Estilo para el contenedor general de los elementos del top-nav. Display flex con un tamaño maximo de ancho. 
+    Max width permite que los elementos en pantallas de 1200px o mas se dirigan al centro*/
 .top-logo-nav-container{
     width: 100%;
     display:flex;
@@ -62,7 +66,9 @@ header {
     max-width: 1200px;
 }
 
+/*Estilos dinamicos para pantallas de menos de 768px*/
 @media screen and (max-width: 768px) {
+    /*Se cambia el logo y su comportamiento ademas del tamaño*/
     .logo{
         background: url(/SRC/resources/general/small-logo.png) no-repeat;
         height: 70px;
@@ -74,6 +80,7 @@ header {
         overflow: hidden;
     }
 
+    /*Las listas no ordenadas dentro de top nav mantienen una transicion y ahora son elementos flex. Se cambia la anchura*/
     #top-nav ul{
         display: flex;
         transition: height 0.3s ease;
@@ -82,6 +89,7 @@ header {
         justify-content: space-evenly;
     }
     
+    /*Hijos de listas no ordenadas dentro de top-nav. Nuevo tamaño y margen*/
     #top-nav ul li{
         display: inline-block;
         /*margin:0 0.7em;*/
@@ -89,11 +97,13 @@ header {
         height: 20px;
     }
     
+    /*Los links dentro de los hijos de listas no ordenadas de top-nav ahora tienen transicion*/
     #top-nav ul li .nav-link{
         transition: font-size 0.3s ease;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
+    /*Al contenedor general se le cambia el comportamiento y el orden de los elementos en su interior*/
     .top-logo-nav-container{
         width: 100%;
         display:flex;
@@ -101,19 +111,21 @@ header {
         align-items: center;
         margin: 0 auto;
         padding: 1rem;
-        max-width: 1200px;
     }
 }
 
+/*Diseño dinamico en pantallas menores de 400px en ancho*/
 @media screen and (max-width: 400px){
-    #top-nav ul li .nav-link{
-        transition: font-size 0.3s ease;
-        font-size: 0.75rem;
-    }
-
+    /*Las listas no ordenadas dentro de top-nav son mas pequeñas y tienen animación nueva*/
     #top-nav ul{
         transition: height 0.3s ease;
         margin: 0.5dvh;
         height: 10px;
+    }
+    
+    /*Los elementos link dentro de los hijos de las listas no ordenadas de top-nav son mas pequeños en tamaño y hay una animacion nueva*/
+    #top-nav ul li .nav-link{
+        transition: font-size 0.3s ease;
+        font-size: 0.75rem;
     }
 }
