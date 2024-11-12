@@ -121,10 +121,10 @@ footer {
     z-index: -10;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 5%;
     overflow: hidden;
     height: 18dvh;
-    min-height: 20px;
+    min-height: 130px;
     background-image: url(/SRC/resources/index_elements/footer-background.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -140,7 +140,7 @@ footer a{
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    padding-top: 15dvh;
+    padding-top: 9%;
 }
 
 @media screen and (max-width: 900px) {
@@ -175,7 +175,7 @@ footer a{
         float: right;
         color: #000000;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 2dvh;
         font-family: "Slackey", sans-serif;
         font-weight: 400;
         font-style: normal;
