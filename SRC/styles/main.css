@@ -26,6 +26,9 @@ header {
     margin-top: 22px;
     margin-bottom: 22px;
     background-color: #201d1e;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #393837;
 }
 
 .h2-custom{
@@ -41,7 +44,6 @@ header {
 /*Estilos para el contenedor navegador*/
 #top-nav{
     display: block;
-    /**/
 }
 
 /*Estilos para los elementos de lista no ordenada dentro de top-nav. retirada de estilos y modificadas las proporciones*/
@@ -99,7 +101,16 @@ header {
 }
 
 
-.information-container
+.information-container{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+.information-container p{
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
+}
 
 /*clase general para los contenedores de imagenes*/
 .image-container{
@@ -112,6 +123,7 @@ header {
 /*clase general para las imagenes del contenedor de imagenes*/
 .image-container img{
     height: 230px;
+    margin: 0.5rem 0;
 }
 /*Estilos dinamicos para pantallas de menos de 768px*/
 @media screen and (max-width: 768px) {
@@ -144,12 +156,6 @@ header {
         height: 20px;
     }
     
-    /*Los links dentro de los hijos de listas no ordenadas de top-nav ahora tienen transicion*/
-    #top-nav ul li .nav-link{
-        transition: font-size 0.3s ease;
-        font-size: 1.25rem;
-    }
-
     /*Al contenedor general se le cambia el comportamiento y el orden de los elementos en su interior*/
     .top-logo-nav-container{
         width: 100%;
@@ -159,10 +165,35 @@ header {
         margin: 0 auto;
         padding: 1rem;
     }
+
+    /*Clase general para contener articulos. Aplicado un display flex para manejar sus contenidos*/
+    .flex-section{
+        display: flex;
+        background-color: #393837;
+        flex-direction: column;
+    }
+
+    /*clase general para los contenedores de la izquierda*/
+    .left-container{
+        padding: 1.25rem;
+        width: 100%;
+        background-color: #201d1e;
+    }
 }
 
 /*Diseño dinamico en pantallas menores de 400px en ancho*/
 @media screen and (max-width: 400px){
+    .logo{
+        background: url(/SRC/resources/general/small-logo.png);
+        min-height: 54px;
+        min-width: 105px;
+        max-width: 105px;
+        max-height: 54px;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }
+
     /*Las listas no ordenadas dentro de top-nav son mas pequeñas y tienen animación nueva*/
     #top-nav ul{
         transition: height 0.3s ease;
