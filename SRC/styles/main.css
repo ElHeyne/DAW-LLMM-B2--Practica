@@ -8,6 +8,15 @@
     overflow: hidden;
 }
 
+.interactable-image{
+    background: url(/SRC/resources/general/big-logo.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
+
 /*Inclusión de elementos padding y margin a la suma total del tamaño del elemento*/
 * {
     box-sizing: border-box;
@@ -31,15 +40,6 @@ header {
     border-bottom: 1px solid #393837;
 }
 
-.h2-custom{
-    display: inline;
-    font-size: 24px;
-    text-decoration: none;
-    font-family: "Slackey", serif;
-    color: white;
-    margin: 0.5rem 0;
-}
-
 /*Hacer responsive min 768p*/
 /*Estilos para el contenedor navegador*/
 #top-nav{
@@ -57,14 +57,6 @@ header {
 #top-nav ul li{
     display: inline-block;
     margin-left: 2.5rem;
-}
-
-/*Estilos para los links de los hijos de las listas no ordenadas de top-nav. Modificada la apariencia y el tamaño*/
-#top-nav ul li .nav-link{
-    font-size: 1.25rem;
-    text-decoration: none;
-    font-family: "Slackey", serif;
-    color: white;
 }
 
 /*Estilo para el contenedor general de los elementos del top-nav. Display flex con un tamaño maximo de ancho. 
@@ -93,23 +85,18 @@ header {
     padding: 1.25rem;
     width: 420px;
     background-color: #201d1e;
+    justify-self: left;
+}
+
+.full-container{
+    padding: 1.25rem;
+    width: 100%;
+    background-color: #201d1e;
 }
 
 .left-container-atch{
     padding: 1.25rem;
     background-color: #393837;
-}
-
-
-.information-container{
-    font-family: "Lexend", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color:white;
-}
-
-.information-container p{
-    margin: 0.5rem 0;
-    padding-bottom: 0.5rem;
 }
 
 /*clase general para los contenedores de imagenes*/
@@ -199,11 +186,5 @@ header {
         transition: height 0.3s ease;
         margin: 0.5dvh;
         height: 10px;
-    }
-    
-    /*Los elementos link dentro de los hijos de las listas no ordenadas de top-nav son mas pequeños en tamaño y hay una animacion nueva*/
-    #top-nav ul li .nav-link{
-        transition: font-size 0.3s ease;
-        font-size: 0.75rem;
     }
 }

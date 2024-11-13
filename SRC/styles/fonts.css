@@ -1,0 +1,48 @@
+/*CSS general para h2 estaticos variados*/
+.h2-custom{
+    display: inline;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Slackey", serif;
+    color: white;
+    margin: 0.5rem 0;
+}
+.h2-center{
+    display: block;
+    justify-self: center;
+}
+
+/*Estilos para los links de los hijos de las listas no ordenadas de top-nav. Modificada la apariencia y el tamaño*/
+#top-nav ul li .nav-link{
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-family: "Slackey", serif;
+    color: white;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+#top-nav ul li .nav-link:hover{
+    color: #fcba2c;
+    font-size: 1.35rem;
+}
+
+/*CSS definido para contenedores cuya unica funcion es almacenar texto informativo*/
+.information-container{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+.information-container p{
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
+}
+
+/*Diseño dinamico en pantallas menores de 400px en ancho*/
+@media screen and (max-width: 400px){
+    /*Los elementos link dentro de los hijos de las listas no ordenadas de top-nav son mas pequeños en tamaño y hay una animacion nueva*/
+    #top-nav ul li .nav-link{
+        transition: font-size 0.3s ease;
+        font-size: 0.75rem;
+    }
+}
