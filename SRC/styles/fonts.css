@@ -18,12 +18,12 @@
     text-decoration: none;
     font-family: "Slackey", serif;
     color: white;
-    transition: color 0.5s, font-size 0.5s;
+    transition: color 0.15s, font-weight 0.15s;
 }
 
 #top-nav ul li .nav-link:hover{
     color: #fcba2c;
-    font-size: 1.35rem;
+    font-weight: 600;
 }
 
 /*CSS definido para contenedores cuya unica funcion es almacenar texto informativo*/
@@ -42,7 +42,6 @@
 @media screen and (max-width: 400px){
     /*Los elementos link dentro de los hijos de las listas no ordenadas de top-nav son mas pequeños en tamaño y hay una animacion nueva*/
     #top-nav ul li .nav-link{
-        transition: font-size 0.3s ease;
         font-size: 0.75rem;
     }
 }

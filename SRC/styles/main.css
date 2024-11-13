@@ -8,10 +8,23 @@
     overflow: hidden;
 }
 
-.interactable-image{
-    background: url(/SRC/resources/general/big-logo.png) no-repeat;
-    width: 70px;
-    height: 70px;
+.interactable-container{
+    display: flex;
+    width: 100%;
+}
+
+.interactable-menu-image img{
+    width: 600px;
+    height: 400px;
+    transition: all 0.15s;
+    margin: 2rem;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
+.interactable-menu-image img:hover{
+    transform: scale(1.1);
+    border-radius: 1.5rem;
     text-indent: -9999px;
     background-size: cover;
     overflow: hidden;
@@ -36,7 +49,7 @@ header {
     margin-bottom: 22px;
     background-color: #201d1e;
     position: sticky;
-    top: 0;
+    top: -10px;
     border-bottom: 1px solid #393837;
 }
 
@@ -80,6 +93,15 @@ header {
     background-color: #393837;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
 /*clase general para los contenedores de la izquierda*/
 .left-container{
     padding: 1.25rem;
@@ -112,6 +134,7 @@ header {
     height: 230px;
     margin: 0.5rem 0;
 }
+
 /*Estilos dinamicos para pantallas de menos de 768px*/
 @media screen and (max-width: 768px) {
     /*Se cambia el logo y su comportamiento ademas del tamaño*/
@@ -166,6 +189,20 @@ header {
         width: 100%;
         background-color: #201d1e;
     }
+
+    .image-container img{
+        width: 70dvw;
+        height: auto;
+        margin: 0.5rem 0;
+    }
+
+    .interactable-menu-image img{
+        background: url(/SRC/resources/index_elements/interactable-menu-sign.png);
+        width: 70dvw;
+        height: auto;
+        text-indent: -9999px;
+        background-size:auto;
+        ;
 }
 
 /*Diseño dinamico en pantallas menores de 400px en ancho*/
