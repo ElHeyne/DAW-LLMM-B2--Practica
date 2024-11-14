@@ -1,0 +1,71 @@
+.logo{
+    background: url(/SRC/resources/general/big-logo.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.interactable-menu-image img{
+    width: 600px;
+    height: 400px;
+    transition: all 0.15s;
+    margin: 2rem;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.interactable-menu-image img:hover{
+    transform: scale(1.1);
+    border-radius: 1.5rem;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.image-container img{
+    height: 230px;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        background: url(/SRC/resources/general/small-logo.png) no-repeat;
+        height: 70px;
+        min-width: 136px;
+        max-width: 136px;
+        max-height: 70px;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-container img{
+        width: 70dvw;
+        height: auto;
+        margin: 0.5rem 0;
+    }
+    .interactable-menu-image img{
+        background: url(/SRC/resources/index_elements/interactable-menu-sign.png);
+        width: 70dvw;
+        height: auto;
+        text-indent: -9999px;
+        background-size:auto;
+        ;
+}}
+
+@media screen and (max-width: 400px){
+    .logo{
+        background: url(/SRC/resources/general/small-logo.png);
+        min-height: 54px;
+        min-width: 105px;
+        max-width: 105px;
+        max-height: 54px;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }}
