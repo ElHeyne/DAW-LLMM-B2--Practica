@@ -53,6 +53,12 @@ header {
     border-bottom: 1px solid #393837;
 }
 
+p{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
 /*Hacer responsive min 768p*/
 /*Estilos para el contenedor navegador*/
 #top-nav{

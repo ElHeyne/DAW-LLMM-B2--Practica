@@ -1,8 +1,5 @@
-.information-container{
-    font-family: "Lexend", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color:white;
-}
+/*NO BORRAR - IDEA*/
+/*container title-container/image-container...*/
 
 .interactable-container{
     display: flex;
@@ -47,7 +44,7 @@
     background-color: #393837;
 }
 
-.full-container{
+.container-title{ /*full-container*/
     padding: 1.25rem;
     width: 100%;
     background-color: #201d1e;
