@@ -24,6 +24,12 @@
     font-weight: 600;
 }
 
+.information-container{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
 .information-container p{
     margin: 0.5rem 0;
     padding-bottom: 0.5rem;
