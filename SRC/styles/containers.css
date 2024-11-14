@@ -1,0 +1,75 @@
+.information-container{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+.interactable-container{
+    display: flex;
+    width: 100%;
+}
+
+.top-logo-nav-container{
+    width: 100%;
+    display:flex;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.content-alley{
+    margin-bottom: 22px;
+}
+
+.flex-section{
+    display: flex;
+    background-color: #393837;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container{
+    padding: 1.25rem;
+    width: 420px;
+    background-color: #201d1e;
+    justify-self: left;
+}
+
+.left-container-atch{
+    padding: 1.25rem;
+    background-color: #393837;
+}
+
+.full-container{
+    padding: 1.25rem;
+    width: 100%;
+    background-color: #201d1e;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-section{
+        display: flex;
+        background-color: #393837;
+        flex-direction: column;
+    }
+
+    .left-container{
+        padding: 1.25rem;
+        width: 100%;
+        background-color: #201d1e;
+    }
+}
