@@ -1,22 +1,27 @@
+/* | FUENTES PRINCIPALES */
+
+/* || FUENTE P */
 p{
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color:white;
 }
 
-h2 {
+/* || FUENTE H1 */
+
+h1 {
     font-family: "Slackey", serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
     margin: 0;
 }
 
-.h2-center{
-    display: block;
-    justify-self: center;
-}
+    .h1-center{
+        display: block;
+        justify-self: center;
+    }
 
-#top-nav ul li .nav-link{
+.top-nav-link{
     font-size: 1.25rem;
     text-decoration: none;
     font-family: "Slackey", serif;
@@ -24,24 +29,13 @@ h2 {
     transition: color 0.15s, font-weight 0.15s;
 }
 
-#top-nav ul li .nav-link:hover{
-    color: #fcba2c;
-    font-weight: 600;
-}
-
-.information-container{
-    font-family: "Lexend", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color:white;
-}
-
-.information-container p{
-    margin: 0.5rem 0;
-    padding-bottom: 0.5rem;
-}
+    .top-nav-link:hover{
+        color: #fcba2c;
+        font-weight: 600;
+    }
 
 @media screen and (max-width: 400px){
-    #top-nav ul li .nav-link{
+    .top-nav-link{
         font-size: 0.75rem;
     }
 }

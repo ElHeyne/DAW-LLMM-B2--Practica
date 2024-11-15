@@ -1,6 +1,3 @@
-/*NO BORRAR - IDEA*/
-/*container title-container/image-container...*/
-
 /* | CONTENEDOR PRINCIPAL */
 .content-row{ /*content-alley*/
     margin-bottom: 22px;
@@ -50,7 +47,6 @@
     }
     
 /* || CONTENEDORES DE TEXTO*/
-
 .text-container{
     background-color: #393837;
     width: 100%;
@@ -97,5 +93,18 @@
     /* || CONTENEDORES DE SECCION*/
     .flex-section{
         flex-direction: column;
+    }
+
+    /* || CONTENEDORES DE TITULO*/
+    .left-asimetric-title-container{
+        background-color: #201d1e;
+        width: 100%;
+        justify-self: left;
+    }
+    
+    .right-asimetric-title-container{
+        background-color: #201d1e;
+        width: 100%;
+        justify-self: right;
     }
 }

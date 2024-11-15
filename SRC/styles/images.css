@@ -7,23 +7,39 @@
     overflow: hidden;
 }
 
-.interactable-menu-image img{
-    width: 600px;
-    height: 400px;
-    transition: all 0.15s;
-    margin: 2rem;
+.footer-icons{
+    width:40px;
+    height: auto;
     text-indent: -9999px;
     background-size: cover;
     overflow: hidden;
+    transition: all 0.15s;
 }
 
-.interactable-menu-image img:hover{
-    transform: scale(1.1);
-    border-radius: 1.5rem;
-    text-indent: -9999px;
-    background-size: cover;
-    overflow: hidden;
+.footer-icons:hover{
+    transform: scale(1.2);
 }
+
+.interactable-menu-image{
+    margin: 2rem;
+}
+
+    .interactable-menu-image img{
+        width: 600px;
+        height: 400px;
+        transition: all 0.15s;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .interactable-menu-image img:hover{
+        transform: scale(1.1);
+        border-radius: 1.5rem;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }
 
 .image-container img{
     height: 230px;

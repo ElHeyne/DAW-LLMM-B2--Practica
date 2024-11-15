@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Documento CSS-->
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/containers.css">
     <link rel="stylesheet" href="styles/navbars.css">
     <link rel="stylesheet" href="styles/fonts.css">
@@ -29,20 +30,18 @@
 <body>
     <!--Todo esto es el header y la navegacion-->
     <header>
-        <section>    
-            <nav id="top-nav">
-                <section class="top-logo-nav-container">
-                    <a class="logo" href="index.html">Logo</a>
-                    <ul>
-                        <li><a href="articles.html" class="nav-link">Menú</a></li>
+        <nav id="top-nav-container">
+            <section class="top-nav-section">
+                <a class="logo" href="index.html">Logo</a>
+                <ul>
+                    <li><a href="articles.html" class="top-nav-link">Menú</a></li>
 
-                        <li><a href="detall.html" class="nav-link">Fórmula Secreta</a></li>
+                    <li><a href="detall.html" class="top-nav-link">Fórmula Secreta</a></li>
 
-                        <li><a href="info.html" class="nav-link">Info</a></li>
-                    </ul>
-                </section>
-            </nav>
-        </section>
+                    <li><a href="info.html" class="top-nav-link">Info</a></li>
+                </ul>
+            </section>
+        </nav>
     </header>
     <!--Aqui va el contenido principal de la web-->
     <main">
@@ -52,7 +51,7 @@
                 <article class="left-asimetric-title-container">
                     <section class="title-container">
                         <section class="title-section">
-                            <h2>Nuestro Restaurante</h2>
+                            <h1>Nuestro Restaurante</h1>
                         </section>
                     </section>
                     <section class="image-container image-container-no-top-padding">
@@ -72,7 +71,7 @@
             <section class="flex-section flex-column flex-center">
                 <section class="title-container">
                     <section class="title-section">
-                        <h2 class="h2-center">Nuestro Menú</h2>
+                        <h1 class="h1-center">Nuestro Menú</h1>
                     </section>
                 </section>
                 <section class="one-image-container">
@@ -85,5 +84,25 @@
             </section>
         </section>
     </main>
+    <footer>
+        <nav id="bottom-nav-container">
+            <section class="bottom-nav-section">
+                <ul>
+                    <a href="https://www.nick.com/fan-hub/spongebob-squarepants" target="_blank">
+                        <img class="footer-icons" src="resources/general/nick-icon.png">
+                    </a>
+                    <a href="https://www.facebook.com/spongebob/" target="_blank">
+                        <img class="footer-icons" src="resources/general/facebook-icon.png">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+                        <img class="footer-icons" src="resources/general/youtube-icon.png">
+                    </a>
+                    <a href="https://www.instagram.com/bobesponja/?hl=es" target="_blank">
+                        <img class="footer-icons" src="resources/general/instagram-icon.png">
+                    </a>
+                </ul>
+            </section>
+        </nav>
+    </footer>
 </body>
 </html>

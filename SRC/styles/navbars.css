@@ -1,37 +1,12 @@
-/*TEMPORAL*/
-header {
+#top-nav-container{
     display: block;
     margin-top: 22px;
     margin-bottom: 22px;
     background-color: #201d1e;
-    position: sticky;
-    top: -10px;
     border-bottom: 1px solid #393837;
 }
 
-body {
-    background-color: #ffde62;
-    margin: 0;
-    padding: 0;
-}
-
-/*TEMPORAL*/
-#top-nav{
-    display: block;
-}
-
-#top-nav ul{
-    list-style: none;
-    margin-top: 19px;
-    height: 29px;
-}
-
-#top-nav ul li{
-    display: inline-block;
-    margin-left: 2.5rem;
-}
-
-.top-logo-nav-container{
+.top-nav-section{
     width: 100%;
     display:flex;
     margin: 0 auto;
@@ -39,27 +14,76 @@ body {
     max-width: 1200px;
 }
 
+#top-nav-container ul{
+    list-style: none;
+    margin-top: 19px;
+    height: 29px;
+}
+
+#top-nav-container ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+#bottom-nav-container{
+    display: block;
+    margin-top: 22px;
+    background-color: #201d1e;
+    border-bottom: 1px solid #393837;
+}
+
+.bottom-nav-section{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.bottom-nav-section ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    max-width: 900px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (max-width: 768px) {
     
-    #top-nav ul{
+    #top-nav-container ul{
         display: flex;
         transition: height 0.3s ease;
         padding: 0;
         width: 95dvw;
         justify-content: space-evenly;
+        margin-bottom: 0; /*Elimina espacio inecesario*/
     }
     
-    #top-nav ul li{
+    #top-nav-container ul li{
         display: inline-block;
         /*margin:0 0.7em;*/
         margin: 0 .8dvw;
         height: 20px;
-    }    
+    }
+
+    .top-nav-section{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 400px){
     
-    #top-nav ul{
+    #top-nav-container ul{
         transition: height 0.3s ease;
         margin: 0.5dvh;
         height: 10px;
