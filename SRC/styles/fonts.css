@@ -1,11 +1,16 @@
-.h2-custom{
-    display: inline;
-    font-size: 24px;
-    text-decoration: none;
-    font-family: "Slackey", serif;
-    color: white;
-    margin: 0.5rem 0;
+p{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
 }
+
+h2 {
+    font-family: "Slackey", serif;
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
 .h2-center{
     display: block;
     justify-self: center;

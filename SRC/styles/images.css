@@ -27,7 +27,6 @@
 
 .image-container img{
     height: 230px;
-    margin: 0.5rem 0;
 }
 
 @media screen and (max-width: 768px) {
