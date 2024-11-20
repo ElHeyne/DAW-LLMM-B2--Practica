@@ -1,0 +1,38 @@
+table{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 2rem;
+    border: 2px solid #201d1e;
+}
+
+th{
+    font-family: "Slackey", serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    background-color: #201d1e;
+    border: 1px solid #201d1e;
+}
+
+td{
+    padding: 8px;
+    background-color: #ffc862;
+    border: 1px solid #201d1e;
+}
+
+@media screen and (max-width: 768px) {
+    table{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    table{
+        font-size: small;
+    }
+}

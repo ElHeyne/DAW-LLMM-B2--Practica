@@ -8,7 +8,11 @@
 
     <!--Documento CSS-->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/containers.css">
+    <link rel="stylesheet" href="styles/navbars.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/tables.css">
     
     <!--Fuente Custom Bob Esponja-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,20 +30,68 @@
 </head>
 <body>
     <header>
-        <section>    
-            <nav id="top-nav">
-                <section class="top-logo-nav-container">
-                    <a class="logo" href="index.html">Logo</a>
-                    <ul>
-                        <li><a href="articles.html" class="nav-link">Menú</a></li>
+        <nav id="top-nav-container">
+            <section class="top-nav-section">
+                <a class="logo" href="index.html">Logo</a>
+                <ul>
+                    <li><a href="articles.html" class="top-nav-link">Menú</a></li>
 
-                        <li><a href="detall.html" class="nav-link">Fórmula Secreta</a></li>
+                    <li><a href="detall.html" class="top-nav-link">Fórmula Secreta</a></li>
 
-                        <li><a href="info.html" class="nav-link">Info</a></li>
-                    </ul>
-                </section>
-            </nav>
-        </section>
+                    <li><a href="info.html" class="top-nav-link">Info</a></li>
+                </ul>
+            </section>
+        </nav>
     </header>
+    
+    <main>
+        <section class="content-row">
+            <section class="flex-section flex-justify-center">
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Title</th>
+                        <th>Title</th>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <nav id="bottom-nav-container">
+            <section class="bottom-nav-section">
+                <ul>
+                    <a href="https://www.nick.com/fan-hub/spongebob-squarepants" target="_blank">
+                        <img class="footer-icons" src="resources/general/nick-icon.png">
+                    </a>
+                    <a href="https://www.facebook.com/spongebob/" target="_blank">
+                        <img class="footer-icons" src="resources/general/facebook-icon.png">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+                        <img class="footer-icons" src="resources/general/youtube-icon.png">
+                    </a>
+                    <a href="https://www.instagram.com/bobesponja/?hl=es" target="_blank">
+                        <img class="footer-icons" src="resources/general/instagram-icon.png">
+                    </a>
+                </ul>
+            </section>
+        </nav>
+    </footer>
 </body>
 </html>

@@ -5,6 +5,39 @@
 
 /* | CONTENEDORES */
 
+/* || CONTENEDORES DE TARJETAS*/
+.card-group-container{
+    margin: 1rem;;
+}
+
+.card-group-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card-container{
+    width: 100%;
+    background-color: #393837;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+
+    img{
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
 /* || CONTENEDORES DE SECCION*/
 .flex-section{
     display: flex;
@@ -13,6 +46,10 @@
     .flex-column{
         flex-direction: column;
     }
+
+        .flex-gapped{
+            gap: 35px;        
+        }
 
     .flex-justify-center{ /*flex-center*/
         justify-content: center;
@@ -88,6 +125,36 @@
         display: flex;
         justify-content: space-around;
     }
+
+/* | REGLAS RESOLUCION ANCHO < 1200px - Tarjetas*/
+@media screen and (max-width: 1200px) {
+    /* || CONTENEDORES DE TARJETAS*/
+    .card-group-section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .card-section{
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
+    .card-image{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+    
+        img{
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+
 /* | REGLAS RESOLUCION ANCHO < 768PX*/
 @media screen and (max-width: 768px) {
     /* || CONTENEDORES DE SECCION*/
@@ -107,4 +174,26 @@
         width: 100%;
         justify-self: right;
     }
+
+    /* || CONTENEDORES DE TARJETAS*/
+    .card-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+    }
+
+    .card-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+        width: 100%;
+    
+        img{
+            width: 100%;
+            min-width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
 }

@@ -27,6 +27,8 @@
 
 #bottom-nav-container{
     display: block;
+    position: sticky;
+    bottom: 100%;
     margin-top: 22px;
     background-color: #201d1e;
     border-bottom: 1px solid #393837;
