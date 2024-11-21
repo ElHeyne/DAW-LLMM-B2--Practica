@@ -82,7 +82,12 @@
         justify-content: center;
         padding: 1.25rem;
     }
-    
+
+        .separated{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: calc(100dvw - 2rem);
+        }
 /* || CONTENEDORES DE TEXTO*/
 .text-container{
     background-color: #393837;
