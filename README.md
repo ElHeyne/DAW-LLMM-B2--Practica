@@ -20,3 +20,6 @@ Trabajo B2 de lenguaje de marcas de curso DAW 24-25. Mimebros de gurpo - Erik Vi
 
 ## (14/11) Erik
 - Realizado cambios a containers.css y fonts.css
+
+## (21/11) Luis
+- Añadido contenido en el apartado de "Nuestros empleados"
