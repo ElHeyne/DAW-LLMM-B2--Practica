@@ -5,6 +5,44 @@
 
 /* | CONTENEDORES */
 
+/* || CONTENEDORES DE MENU*/
+.menu-group-container{
+    margin: 1rem;
+    width: 100%;
+}
+
+.menu-group-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.menu-container{
+    width: 100%;
+    background-color: #393837;
+}
+
+.menu-section{
+    display: flex;
+}
+
+.menu-information{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+
+    img{
+        width: 60dvw;
+        min-width: 60dvw;
+    }
+}
 /* || CONTENEDORES DE TARJETAS*/
 .card-group-container{
     margin: 1rem;;
@@ -34,6 +72,7 @@
 
     img{
         width: 100%;
+        max-width: 500px;
         min-width: 100%;
     }
 }
