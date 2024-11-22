@@ -23,3 +23,6 @@ Trabajo B2 de lenguaje de marcas de curso DAW 24-25. Mimebros de gurpo - Erik Vi
 
 ## (21/11) Luis
 - Añadido contenido en el apartado de "Nuestros empleados"
+
+## (22/11) Luis
+- Creado lists.css
