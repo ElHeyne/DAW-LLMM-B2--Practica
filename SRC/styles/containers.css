@@ -179,6 +179,23 @@
         justify-content: space-around;
     }
 
+/* | CONTENEDORES DE VIDEO */
+.video-container{
+    background-color: #393837;
+    width: 100%;
+}
+    .video-section{
+        display: flex;
+        justify-content: space-around;
+
+        video{
+            width: 80%;
+            max-width: 1000px;
+            margin: 2rem;
+            border-radius: 1rem;
+        }
+    }
+
 /* | REGLAS RESOLUCION ANCHO < 1200px - Tarjetas*/
 @media screen and (max-width: 1200px) {
     /* || CONTENEDORES DE TARJETAS*/
