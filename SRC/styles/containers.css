@@ -29,6 +29,7 @@
 
 .menu-information{
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -39,8 +40,7 @@
     padding: 1.25rem;
 
     img{
-        width: 60dvw;
-        min-width: 60dvw;
+        width: 400px;
     }
 }
 /* || CONTENEDORES DE TARJETAS*/
@@ -86,9 +86,13 @@
         flex-direction: column;
     }
 
-        .flex-gapped{
-            gap: 35px;        
-        }
+    .flex-gapped{
+        gap: 35px;        
+    }
+
+    .flex-reversed{
+        flex-flow: row-reverse;
+    }
 
     .flex-justify-center{ /*flex-center*/
         justify-content: center;
@@ -104,16 +108,13 @@
     width: 100%;
 }
 
-.left-asimetric-title-container{
-    background-color: #201d1e;
-    width: 420px;
-    justify-self: left;
-}
+    .title-container-no-background{
+        background-color: transparent;
+    }
 
-.right-asimetric-title-container{
+.side-title-container{
     background-color: #201d1e;
     width: 420px;
-    justify-self: right;
 }
 
     .title-section{
@@ -121,17 +122,16 @@
         justify-content: center;
         padding: 1.25rem;
     }
-
-        .separated{
-            margin-left: 1rem;
-            margin-right: 1rem;
-            width: calc(100dvw - 2rem);
-        }
 /* || CONTENEDORES DE TEXTO*/
 .text-container{
     background-color: #393837;
     width: 100%;
 }
+
+    .text-reverse{
+        text-align: end;
+    }
+
     .text-section{
         display: flex;
         flex-direction: column;
@@ -170,6 +170,15 @@
         justify-content: space-around;
     }
 
+.big-image-container{
+    background-color: #393837;
+    width: 100%;
+}
+    .big-image-section{
+        display: flex;
+        justify-content: space-around;
+    }
+
 /* | REGLAS RESOLUCION ANCHO < 1200px - Tarjetas*/
 @media screen and (max-width: 1200px) {
     /* || CONTENEDORES DE TARJETAS*/
@@ -186,14 +195,14 @@
     }
 
     .card-image{
-        width: 60%;
+        width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1.25rem;
     
         img{
-            width: 100%;
+            width: 200px;
             min-width: 100%;
         }
     }
@@ -207,16 +216,10 @@
     }
 
     /* || CONTENEDORES DE TITULO*/
-    .left-asimetric-title-container{
+    .side-title-container{
         background-color: #201d1e;
         width: 100%;
         justify-self: left;
-    }
-    
-    .right-asimetric-title-container{
-        background-color: #201d1e;
-        width: 100%;
-        justify-self: right;
     }
 
     /* || CONTENEDORES DE TARJETAS*/

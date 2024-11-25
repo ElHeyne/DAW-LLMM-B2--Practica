@@ -7,6 +7,18 @@ p{
     color:white;
 }
 
+b{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+i{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
 /* || FUENTE H1 */
 
 h1 {
@@ -17,6 +29,18 @@ h1 {
 }
 
     .h1-center{
+        display: block;
+        justify-self: center;
+    }
+
+h2 {
+    font-family: "Slackey", serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+    .h2-center{
         display: block;
         justify-self: center;
     }

@@ -20,20 +20,19 @@
     transform: scale(1.2);
 }
 
-.interactable-menu-image{
+.interactable-image{
     margin: 2rem;
 }
 
-    .interactable-menu-image img{
+    .interactable-image img{
         width: 600px;
-        height: 400px;
         transition: all 0.15s;
         text-indent: -9999px;
         background-size: cover;
         overflow: hidden;
     }
 
-    .interactable-menu-image img:hover{
+    .interactable-image img:hover{
         transform: scale(1.1);
         border-radius: 1.5rem;
         text-indent: -9999px;
@@ -41,8 +40,30 @@
         overflow: hidden;
     }
 
+.big-interactable-image{
+    margin: 2rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+    .big-interactable-image img{
+        width: 100%;
+        transition: all 0.15s;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .big-interactable-image img:hover{
+        transform: scale(1.05);
+        border-radius: 1.5rem;
+        text-indent: -9999px;
+        background-size: cover;
+        overflow: hidden;
+    }
+
 .image-container img{
-    height: 230px;
+    width: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,14 +85,14 @@
         height: auto;
         margin: 0.5rem 0;
     }
-    .interactable-menu-image img{
-        background: url(/SRC/resources/index_elements/interactable-menu-sign.png);
+    .interactable-image img{
         width: 70dvw;
         height: auto;
         text-indent: -9999px;
         background-size:auto;
         ;
-}}
+    }
+}
 
 @media screen and (max-width: 400px){
     .logo{
