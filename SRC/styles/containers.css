@@ -1,0 +1,246 @@
+/* | CONTENEDOR PRINCIPAL */
+.content-row{ /*content-alley*/
+    margin-bottom: 22px;
+}
+
+/* | CONTENEDORES */
+
+/* || CONTENEDORES DE MENU*/
+.menu-group-container{
+    margin: 1rem;
+    width: 100%;
+}
+
+.menu-group-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.menu-container{
+    width: 100%;
+    background-color: #393837;
+}
+
+.menu-section{
+    display: flex;
+}
+
+.menu-information{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.menu-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+
+    img{
+        width: 400px;
+    }
+}
+/* || CONTENEDORES DE TARJETAS*/
+.card-group-container{
+    margin: 1rem;;
+}
+
+.card-group-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card-container{
+    width: 100%;
+    background-color: #393837;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+
+    img{
+        width: 100%;
+        max-width: 500px;
+        min-width: 100%;
+    }
+}
+
+/* || CONTENEDORES DE SECCION*/
+.flex-section{
+    display: flex;
+}
+
+    .flex-column{
+        flex-direction: column;
+    }
+
+    .flex-gapped{
+        gap: 35px;        
+    }
+
+    .flex-reversed{
+        flex-flow: row-reverse;
+    }
+
+    .flex-justify-center{ /*flex-center*/
+        justify-content: center;
+    }
+
+    .flex-align-center{ /*flex-center*/
+        align-items: center;
+    }
+
+/* || CONTENEDORES DE TITULO*/
+.title-container{
+    background-color: #201d1e;
+    width: 100%;
+}
+
+    .title-container-no-background{
+        background-color: transparent;
+    }
+
+.side-title-container{
+    background-color: #201d1e;
+    width: 420px;
+}
+
+    .title-section{
+        display: flex;
+        justify-content: center;
+        padding: 1.25rem;
+    }
+/* || CONTENEDORES DE TEXTO*/
+.text-container{
+    background-color: #393837;
+    width: 100%;
+}
+
+    .text-reverse{
+        text-align: end;
+    }
+
+    .text-section{
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+        .text-section-center{
+            justify-content: center;
+        }
+
+        .text-section-right{
+            justify-content: right;
+        }
+
+        .text-section-left{
+            justify-content: left;
+        }
+        
+/* || CONTENEDORES DE IMAGEN*/
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+    .image-container-no-top-padding{
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+
+.one-image-container{
+    background-color: #393837;
+    width: 100%;
+}
+    .one-image-section{
+        display: flex;
+        justify-content: space-around;
+    }
+
+.big-image-container{
+    background-color: #393837;
+    width: 100%;
+}
+    .big-image-section{
+        display: flex;
+        justify-content: space-around;
+    }
+
+/* | REGLAS RESOLUCION ANCHO < 1200px - Tarjetas*/
+@media screen and (max-width: 1200px) {
+    /* || CONTENEDORES DE TARJETAS*/
+    .card-group-section{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .card-section{
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
+    .card-image{
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+    
+        img{
+            width: 200px;
+            min-width: 100%;
+        }
+    }
+}
+
+/* | REGLAS RESOLUCION ANCHO < 768PX*/
+@media screen and (max-width: 768px) {
+    /* || CONTENEDORES DE SECCION*/
+    .flex-section{
+        flex-direction: column;
+    }
+
+    /* || CONTENEDORES DE TITULO*/
+    .side-title-container{
+        background-color: #201d1e;
+        width: 100%;
+        justify-self: left;
+    }
+
+    /* || CONTENEDORES DE TARJETAS*/
+    .card-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+    }
+
+    .card-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+        width: 100%;
+    
+        img{
+            width: 100%;
+            min-width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+/* | FUENTES PRINCIPALES */
+
+/* || FUENTE P */
+p{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+b{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+i{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color:white;
+}
+
+/* || FUENTE H1 */
+
+h1 {
+    font-family: "Slackey", serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+    .h1-center{
+        display: block;
+        justify-self: center;
+    }
+
+h2 {
+    font-family: "Slackey", serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+    .h2-center{
+        display: block;
+        justify-self: center;
+    }
+
+.top-nav-link{
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-family: "Slackey", serif;
+    color: white;
+    transition: color 0.15s, font-weight 0.15s;
+}
+
+    .top-nav-link:hover{
+        color: #fcba2c;
+        font-weight: 600;
+    }
+
+@media screen and (max-width: 400px){
+    .top-nav-link{
+        font-size: 0.75rem;
+    }
+}

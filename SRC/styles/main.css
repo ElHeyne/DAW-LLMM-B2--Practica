@@ -1,185 +1,23 @@
+/*Inclusión de elementos padding y margin a la suma total del tamaño del elemento*/
 * {
     box-sizing: border-box;
 }
 
+/*Declaración del color de fondo y eliminacion de margenes y padding*/
 body {
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-body header {
-    display: flex;
-    justify-content: center;
-
-    background-color: #f8b333;
+    background-color: #ffde62;
     margin: 0;
-    border: 0;
-    height: 8dvh;
-    min-height: 100px;
+    padding: 0;
 }
 
-body header img{
-    margin: 8px;
-    margin-left: 0px;
-    margin-right: 36px;
-    margin-bottom: 0px;
+/*Declaración del estilo header. Tipo bloque para ocupar todo el ancho de la ventana con margenes para el contenido.*/
+header {
+    display: block;
+    position: sticky; /*Habilita ver el header on scroll*/
+    top: 0px;
+    z-index: 10;
 }
 
-body header h1{
-    color: #9c0207;
-    font-family: "Slackey", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #fcf083;
-    overflow: hidden;
-    height: 6dvh;
-    min-height: 40px;
-}
-
-nav a{
-    float: right;
-    color: #df6c00;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Slackey", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-nav a:hover {
-    color: #692102;
-}
-
-#link_visitado{
-    color: #571c02;
-}
-
-
-main {
-    margin: 8px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
-    justify-content: space-between;
-}
-
-.column {
-    flex: 1 1 22%;
-    min-width: 250px;
-    height: 600px;
-    box-sizing: border-box;
-}
-
-.card {
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-radius: 15px;  
-    border-color: #571c02;
-    background-image: linear-gradient(to bottom right, #ffbb46, #fd9138);
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 8px;
-    border-radius: 15px;  
-    border-style: solid;
-    border-width: 5px;
-    border-color: #571c02;
-}
-
-.card h2{
-    color: #9c0207;
-    font-family: "Slackey", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.card .informacion{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-}
-
-footer { 
-    width: 100%;
-    z-index: -10;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    overflow: hidden;
-    height: 18dvh;
-    min-height: 130px;
-    background-image: url(/SRC/resources/index_elements/footer-background.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
-footer a{
-    float: right;
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Slackey", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    padding-top: 9%;
-}
-
-@media screen and (max-width: 900px) {
-    body header {
-        display: flex;
-        justify-content: center;
-        background-color: #f8b333;
-        margin: 0;
-        border: 0;
-        height: 16dvh;
-    }
-
-    body header img{
-        margin: 4px;
-        margin-left: 0px;
-        margin-right: 12px;
-        margin-bottom: 0px;
-        size: 25%;
-    }
-
-    body header h1{
-        font-size: 4dvh;
-    }
-
-    .column {
-      flex: 1 1 100%;
-      margin-bottom: 20px;
-      height: none;
-    }
-
-    footer a{
-        float: right;
-        color: #000000;
-        text-decoration: none;
-        font-size: 2dvh;
-        font-family: "Slackey", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        padding-top: 14dvh;
-    }
+footer {
+    display: block;
 }

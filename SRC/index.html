@@ -5,68 +5,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Documento CSS-->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/containers.css">
+    <link rel="stylesheet" href="styles/navbars.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/lists.css">
+    
     <!--Fuente Custom Bob Esponja-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
 
-    <!--Fuente de Informacion-->
+    <!--Fuente Custom Lexend (Informacion)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
     <!--Icono de la pagina-->
     <link rel="icon" type="image/x-icon" href="resources/favicons/favicon.ico">
     <title>Inicio</title>
 </head>
-<body background="resources/index_elements/bikini_bottom_sky.jpeg">
+<body>
+    <!--Todo esto es el header y la navegacion-->
     <header>
-        <img src="resources/index_elements/krusty_krab_sign.png" alt="señal Crustaceo Crujiente">
-        <h1>Crustáceo Crujiente</h1>
+        <nav id="top-nav-container">
+            <section class="top-nav-section">
+                <a class="logo" href="index.html">Logo</a>
+                <ul>
+                    <li><a href="articles.html" class="top-nav-link">Menú</a></li>
+
+                    <li><a href="detall.html" class="top-nav-link">Fórmula Secreta</a></li>
+
+                    <li><a href="info.html" class="top-nav-link">Info</a></li>
+                </ul>
+            </section>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html" id="link_visitado">Inicio</a>    
-        <a href="articles.html">Menú</a>
-        <a href="detall.html">Fórmula Secreta</a>
-        <a href="info.html">Info</a>
-    </nav>
-    <main>
-        <section class="row">
-            <article class="column card">
-                <h2>Bob Esponja</h2>
-                <figure>
-                    <img src="resources/index_elements/spongebob.jpg" alt="Imagen de Bob Esponja">
-                </figure>
-                <article class="informacion">
-                    <p>Test de informacion</p>
+    <!--Aqui va el contenido principal de la web-->
+    <main">
+        <!--Aqui van los elementos para la descripción del restaurante-->
+        <section class="content-row">
+            <section class="flex-section">
+                <article class="side-title-container">
+                    <section class="title-container">
+                        <section class="title-section">
+                            <h1>Nuestro Restaurante</h1>
+                        </section>
+                    </section>
+                    <section class="image-container image-container-no-top-padding">
+                        <img src="resources/index_elements/krusty_krab.png" alt="Crustaceo Crujiente">
+                    </section>
                 </article>
-            </article>
-            <article class="column card">
-                <h2>Calamardo</h2>
-                <figure>
-                    <img src="resources/index_elements/squidward.jpg" alt="Imagen de Calamardo">
-                </figure>
-                <article class="informacion">
-                    <p>Test de informacion</p>
+                <section class="text-container">
+                    <section class="text-section text-section-right">
+                        <p>Somos el restaurante de comida rápida mas famoso de todo Fondo de Bikini.</p>
+                        <p>Nuestro menú, cocinado por nuestro chef estrella, reconocido en los 7 mares es de la mejor calidad.</p>
+                        <p>La atención al cliente, según nuestros consumidores, es excelente, exceptuando la caja registradora...</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="content-row">
+            <section class="flex-section flex-column flex-center">
+                <section class="title-container">
+                    <section class="title-section">
+                        <h1 class="h1-center">Nuestro Menú</h1>
+                    </section>
+                </section>
+                <section class="one-image-container">
+                    <section class="one-image-section">
+                        <a class="interactable-image" href="articles.html">
+                            <img src="resources/index_elements/interactable-menu-sign.png">
+                       </a>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="content-row">
+            <section class="flex-section flex-column">
+                <section class="title-container">
+                    <section class="title-section">
+                        <h1>Nuestos Empleados</h1>
+                    </section>
+                </section>
+                <section class="card-group-container">
+                    <section class="card-group-section">
+                        <section class="card-container">
+                            <section class="card-section">
+                                <section class="card-image">
+                                    <img src="resources/index_elements/spongebob.jpg">
+                                </section>
+                                <section class="text-section">
+                                    <p>Bob, nuestro cocinero, es el principal responsable de nuetro éxito. 
+                                        Gracias a su maestría con nuestro plato estrella, 
+                                        la Burger Cangreburger, nos podemos considerar un restaurante orgulloso. 
+                                        Excepto cuando se cuelan restos de medusa en la comida. </p>
+                                    <ul>
+                                        <li>Salario: Una palmada en la espalda</li>
+                                        <li>Ganas de trabajar: SIIIII</li>
+                                        <li>Archienemigo: Vacaciones</li>
+                                    </ul>
+                                
+                                </section>
+                            </section>
+                        </section>
+                        <section class="card-container">
+                            <section class="card-section">
+                                <section class="card-image">
+                                    <img src="resources/index_elements/squidward.jpg">
+                                </section>
+                                <section class="text-section">
+                                    <p>De la atención al cliente se encarga Calamardo. 
+                                        Dejando a un lado su usual mal humor, nos queda un cajero excepcional 
+                                        y un pilar crucial en el funcionamiento del local (altamente reemplazable).</p>
+                                    <ul>
+                                        <li>Salario: 1.500WB</li>
+                                        <li>Ganas de trabajar: Las justas</li>
+                                        <li>Archienemigo: La diversión</li>
+                                    </ul>
+                                    </section>
+                            </section>
+                        </section>
+                        <section class="card-container">
+                            <section class="card-section">
+                                <section class="card-image">
+                                    <img src="resources/index_elements/crab.jpg">
+                                </section>
+                                <section class="text-section">
+                                    <p>Eugenio Haroldo Cangrejo también conocido como Señor Cangrejo o 
+                                        "el extorsionador de Bob", es el dueño del Crustáceo Crujiente. 
+                                        Suele dedicarse administrar el restaurante, guardar la fórmula secreta a buen resguardo
+                                        ...y lo que sea que esté haciendo en la imagen.</p>
+                                    <ul>
+                                        <li>Salario: Lo que pueda conseguir</li>
+                                        <li>Ganas de trabajar: Inconmensurables (solo tiene que preocuparse de ganar dinero)</li>
+                                        <li>Archienemigo: Plankton</li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="content-row">
+            <section class="flex-section">
+                <article class="title-container">
+                    <section class="title-container">
+                        <section class="title-section">
+                            <h1>¿Quieres Saber Nuestro Secreto?</h1>
+                        </section>
+                    </section>
+                    <section class="image-container image-container-no-top-padding">
+                        <a class="interactable-image" href="detall.html">
+                            <img src="resources/index_elements/secret_formula.png">
+                       </a>
+                    </section>
                 </article>
-            </article>
-            <article class="column card">
-                <h2>Señor Cangrejo</h2>
-                <figure>
-                    <img src="resources/index_elements/crab.jpg" alt="Imagen de Señor Cangrejo">
-                </figure>
-                <article class="informacion">
-                    <p>Test de informacion</p>
-                </article>
-            </article>
+            </section>
         </section>
     </main>
+
     <footer>
-        <a href="https://www.instagram.com/spongebob">Instagram</a>    
-        <a href="https://x.com/spongebob">Twitter</a>
-        <a href="https://www.facebook.com/bobesponja/?brand_redir=42798291365">Facebook</a>
-        <a href="https://www.nick.com/">Nickelodeon</a>
+        <nav id="bottom-nav-container">
+            <section class="bottom-nav-section">
+                <ul>
+                    <a href="https://www.nick.com/fan-hub/spongebob-squarepants" target="_blank">
+                        <img class="footer-icons" src="resources/general/nick-icon.png">
+                    </a>
+                    <a href="https://www.facebook.com/spongebob/" target="_blank">
+                        <img class="footer-icons" src="resources/general/facebook-icon.png">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+                        <img class="footer-icons" src="resources/general/youtube-icon.png">
+                    </a>
+                    <a href="https://www.instagram.com/bobesponja/?hl=es" target="_blank">
+                        <img class="footer-icons" src="resources/general/instagram-icon.png">
+                    </a>
+                </ul>
+            </section>
+        </nav>
     </footer>
 </body>
 </html>

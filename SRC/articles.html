@@ -5,28 +5,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Documento CSS-->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/containers.css">
+    <link rel="stylesheet" href="styles/navbars.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/lists.css">
+    
     <!--Fuente Custom Bob Esponja-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+
+    <!--Fuente Custom Lexend (Informacion)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
     <!--Icono de la pagina-->
     <link rel="icon" type="image/x-icon" href="resources/favicons/favicon.ico">
     <title>Menú</title>
 </head>
 <body background="resources/article_elements/wood_background.jpeg">
     <header>
-        <img src="resources/article_elements/krusty_krab_menu.png" alt="menú Crustaceo Crujiente">
-        <h1>Crustáceo Crujiente</h1>
+        <nav id="top-nav-container">
+            <section class="top-nav-section">
+                <a class="logo" href="index.html">Logo</a>
+                <ul>
+                    <li><a href="articles.html" class="top-nav-link">Menú</a></li>
+
+                    <li><a href="detall.html" class="top-nav-link">Fórmula Secreta</a></li>
+
+                    <li><a href="info.html" class="top-nav-link">Info</a></li>
+                </ul>
+            </section>
+        </nav>
     </header>
-    <nav>    
-        <a href="index.html">Inicio</a>    
-        <a href="articles.html" id="link_visitado">Menú</a>
-        <a href="detall.html">Fórmula Secreta</a>
-        <a href="info.html">Info</a>
-    </nav>
+    
     <main>
-        <p>te</p>
+        <section class="content-row">
+            <section class="flex-section flex-reversed">
+                <article class="side-title-container">
+                    <section class="image-container image-container-no-top-padding">
+                        <img src="resources/article_elements/krusty_krab_menu.png" alt="Menú del Crustaceo Crujiente">
+                    </section>
+                </article>
+                <section class="text-container text-reverse">
+                    <section class="text-section text-section-right">
+                        <p>Nuestro menú es el más variado y variopinto de todo Fondo de Bikini.</p>
+                        <p>Una parrilla que comienza con nuestra especialidad desde 1999, la burguer cangreburger, pasando por batidos kelp o aros de alga, nuestra cocina es la mejor en los siete mares.</p>
+                        <i>* Se ofrecen alternativas sin cebo y sin alga</i>
+                    </section>
+                </section>
+            </section>
+        </section>
+        
+        <section class="content-row">
+            <section class="flex-section flex-center">
+                <section class="menu-group-container">
+                    <section class="menu-group-section">
+                        <section class="menu-container">
+                            <section class="menu-section">
+                                <section class="menu-image">
+                                    <img src="https://i.redd.it/vzwlxp0q5bia1.jpg">
+                                </section>
+                                <section class="menu-information">
+                                    <section class="title-container title-container-no-background">
+                                        <section class="title-section">
+                                            <h2>Nombre Producto</h2>
+                                        </section>
+                                    </section>
+                                    <section class="text-section">
+                                        <p>escribe la descripcion del producto...</p>
+                                        <b>Ingredientes</b>
+                                        <ul>
+                                            <li>ingrediente 1</li>
+                                            <li>ingrediente 2</li>
+                                            <li>ingrediente 3</li>
+                                        </ul>
+                                        <b>Precios</b>
+                                        <ul>
+                                            <li>Pequeño</li>
+                                            <li>Mediano</li>
+                                            <li>Grande</li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
     </main>
+    
+    <footer>
+        <nav id="bottom-nav-container">
+            <section class="bottom-nav-section">
+                <ul>
+                    <a href="https://www.nick.com/fan-hub/spongebob-squarepants" target="_blank">
+                        <img class="footer-icons" src="resources/general/nick-icon.png">
+                    </a>
+                    <a href="https://www.facebook.com/spongebob/" target="_blank">
+                        <img class="footer-icons" src="resources/general/facebook-icon.png">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+                        <img class="footer-icons" src="resources/general/youtube-icon.png">
+                    </a>
+                    <a href="https://www.instagram.com/bobesponja/?hl=es" target="_blank">
+                        <img class="footer-icons" src="resources/general/instagram-icon.png">
+                    </a>
+                </ul>
+            </section>
+        </nav>
+    </footer>
 </body>
 </html>
