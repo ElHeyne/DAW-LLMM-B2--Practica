@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="styles/navbars.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/tables.css">
     <link rel="stylesheet" href="styles/lists.css">
     
     <!--Fuente Custom Bob Esponja-->
@@ -28,7 +30,10 @@
     <link rel="icon" type="image/x-icon" href="resources/favicons/favicon.ico">
     <title>Menú</title>
 </head>
+
 <body background="resources/article_elements/wood_background.jpeg">
+    
+    <!--Header con enlaces de navegacion-->
     <header>
         <nav id="top-nav-container">
             <section class="top-nav-section">
@@ -44,7 +49,9 @@
         </nav>
     </header>
     
+    <!--Main con el contenido relevante-->
     <main>
+        <!--Section describiendo el menú-->
         <section class="content-row">
             <section class="flex-section flex-reversed">
                 <article class="side-title-container">
@@ -62,8 +69,9 @@
             </section>
         </section>
         
+        <!--Section con elemento del menú-->
         <section class="content-row">
-            <section class="flex-section flex-center">
+            <section class="flex-section flex-section-nocolumn flex-center">
                 <section class="menu-group-container">
                     <section class="menu-group-section">
                         <section class="menu-container">
@@ -77,26 +85,39 @@
                                             <h2>Burger Cangreburger</h2>
                                         </section>
                                     </section>
-                                    <section class="text-section">
-                                        <p>La clásica hamburguesa del crustáceo crujiente</p>
-                                        <b>Ingredientes</b>
-                                        <ul>
-                                            <li>Pan de sésamo</li>
-                                            <li>Carne de hamburguesa</li>
-                                            <li>Pepinillos</li>
-                                            <li>Tomate</li>
-                                            <li>Queso</li>
-                                            <li>Lechuga</li>
-                                            <li>Ketchup</li>
-                                            <li>Mostaza</li>
-                                            <li>Cebolla</li>
-                                        </ul>
-                                        <b>Precios</b>
-                                        <ul>
-                                            <li>Estándar....................1.25WB</li>
-                                            <li>Doble...........................1.25WB</li>
-                                            <li>Extra de queso....+0.25WB</li>
-                                        </ul>
+                                    <section class="menu-dinamic-information">
+                                        <section class="text-section">
+                                            <p>La clásica hamburguesa del crustáceo crujiente</p>
+                                            <b>Ingredientes</b>
+                                            <ul>
+                                                <li>Pan de sésamo</li>
+                                                <li>Carne de hamburguesa</li>
+                                                <li>Pepinillos</li>
+                                                <li>Tomate</li>
+                                                <li>Queso</li>
+                                                <li>Lechuga</li>
+                                                <li>Ketchup</li>
+                                                <li>Mostaza</li>
+                                                <li>Cebolla</li>
+                                            </ul>
+                                        </section>
+                                        <section class="text-section">
+                                            <b>Precios</b>
+                                            <table class="menu-table">
+                                                <tr>
+                                                    <th>Estandár</th>
+                                                    <td>1.25 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Doble</th>
+                                                    <td>1.25 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Extra de Queso</th>
+                                                    <td>+ 0.25 WB</td>
+                                                </tr>
+                                            </table>
+                                        </section>
                                     </section>
                                 </section>
                             </section>
@@ -106,14 +127,15 @@
             </section>
         </section>
 
+        <!--Section con elemento del menú-->
         <section class="content-row">
-            <section class="flex-section flex-center">
+            <section class="flex-section flex-section-nocolumn flex-center">
                 <section class="menu-group-container">
                     <section class="menu-group-section">
                         <section class="menu-container">
                             <section class="menu-section">
                                 <section class="menu-image">
-                                    <img src="resources/article_elements/KrustyDog - copia.png">
+                                    <img src="resources/article_elements/KrustyDog.png">
                                 </section>
                                 <section class="menu-information">
                                     <section class="title-container title-container-no-background">
@@ -121,19 +143,26 @@
                                             <h2>Perrito de mar salada</h2>
                                         </section>
                                     </section>
-                                    <section class="text-section">
-                                        <p>Una alternativa de carne menos cargada</p>
-                                        <b>Ingredientes</b>
-                                        <ul>
-                                            <li>Pan</li>
-                                            <li>Salchicha</li>
-                                            <li>Mostaza</li>
-                                            <li>Ketchup</li>
-                                        </ul>
-                                        <b>Precio</b>
-                                        <ul>
-                                            <li>Estándar..........1.25WB</li>
-                                        </ul>
+                                    <section class="menu-dinamic-information">
+                                        <section class="text-section">
+                                            <p>Una alternativa de carne menos cargada</p>
+                                            <b>Ingredientes</b>
+                                            <ul>
+                                                <li>Pan</li>
+                                                <li>Salchicha</li>
+                                                <li>Mostaza</li>
+                                                <li>Ketchup</li>
+                                            </ul>
+                                        </section>
+                                        <section class="text-section">
+                                            <b>Precio</b>
+                                            <table class="menu-table">
+                                                <tr>
+                                                    <th>Estandár</th>
+                                                    <td>1.25 WB</td>
+                                                </tr>
+                                            </table>
+                                        </section>
                                     </section>
                                 </section>
                             </section>
@@ -143,8 +172,9 @@
             </section>
         </section>
 
+        <!--Section con elemento del menú-->
         <section class="content-row">
-            <section class="flex-section flex-center">
+            <section class="flex-section flex-section-nocolumn flex-center">
                 <section class="menu-group-container">
                     <section class="menu-group-section">
                         <section class="menu-container">
@@ -155,23 +185,33 @@
                                 <section class="menu-information">
                                     <section class="title-container title-container-no-background">
                                         <section class="title-section">
-                                            <h2>Empanada dorada</h2>
+                                            <h2>Empanada Dorada</h2>
                                         </section>
                                     </section>
-                                    <section class="text-section">
-                                        <p>Para los miembros de la mesa cuadrada</p>
-                                        <b>Ingredientes</b>
-                                        <ul>
-                                            <li>Oro rallado</li>
-                                            <li>Carne picada</li>
-                                            <li>Cebolla</li>
-                                            <li>Ajo</li>
-                                        </ul>
-                                        <b>Precios</b>
-                                        <ul>
-                                            <li>Estándar.......................7.00WB</li>
-                                            <li>Salsa de tomate.....+2.00WB</li>
-                                        </ul>
+                                    <section class="menu-dinamic-information">
+                                        <section class="text-section">
+                                            <p>Para miembros de la mesa cuadrada</p>
+                                            <b>Ingredientes</b>
+                                            <ul>
+                                                <li>Oro rayado</li>
+                                                <li>Carne picada</li>
+                                                <li>Cebolla</li>
+                                                <li>Ajo</li>
+                                            </ul>
+                                        </section>
+                                        <section class="text-section">
+                                            <b>Precio</b>
+                                            <table class="menu-table">
+                                                <tr>
+                                                    <th>Estandár</th>
+                                                    <td>7.00 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Salsa de tomáte</th>
+                                                    <td>+ 2.00 WB</td>
+                                                </tr>
+                                            </table>
+                                        </section>
                                     </section>
                                 </section>
                             </section>
@@ -181,8 +221,9 @@
             </section>
         </section>
 
+        <!--Section con elemento del menú-->
         <section class="content-row">
-            <section class="flex-section flex-center">
+            <section class="flex-section flex-section-nocolumn flex-center">
                 <section class="menu-group-container">
                     <section class="menu-group-section">
                         <section class="menu-container">
@@ -196,18 +237,31 @@
                                             <h2>Bits de coral</h2>
                                         </section>
                                     </section>
-                                    <section class="text-section">
-                                        <p>Un acompañamiento ideal para cualquier plato (incluido en menús)</p>
-                                        <b>Ingredientes</b>
-                                        <ul>
-                                            <li>Coral frito</li>
-                                        </ul>
-                                        <b>Precios</b>
-                                        <ul>
-                                            <li>Pequeño.....1.00WB</li>
-                                            <li>Mediano......1.25WB</li>
-                                            <li>Grande.........1.50WB</li>
-                                        </ul>
+                                    <section class="menu-dinamic-information">
+                                        <section class="text-section">
+                                            <p>Un acompañamiento ideal para cualquier plato (incluido en menús)</p>
+                                            <b>Ingredientes</b>
+                                            <ul>
+                                                <li>Coral frito</li>
+                                            </ul>
+                                        </section>
+                                        <section class="text-section">
+                                            <b>Precio</b>
+                                            <table class="menu-table">
+                                                <tr>
+                                                    <th>Pequeño</th>
+                                                    <td>1.00 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Mediano</th>
+                                                    <td>1.25 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Grande</th>
+                                                    <td>1.50 WB</td>
+                                                </tr>
+                                            </table>
+                                        </section>
                                     </section>
                                 </section>
                             </section>
@@ -217,8 +271,9 @@
             </section>
         </section>
 
+        <!--Section con elemento del menú-->
         <section class="content-row">
-            <section class="flex-section flex-center">
+            <section class="flex-section flex-section-nocolumn flex-center">
                 <section class="menu-group-container">
                     <section class="menu-group-section">
                         <section class="menu-container">
@@ -229,20 +284,30 @@
                                 <section class="menu-information">
                                     <section class="title-container title-container-no-background">
                                         <section class="title-section">
-                                            <h2>Aros de alga</h2>
+                                            <h2>Aros de Alga</h2>
                                         </section>
                                     </section>
-                                    <section class="text-section">
-                                        <p>Recién sacadas de entre las rocas</p>
-                                        <b>Ingredientes</b>
-                                        <ul>
-                                            <li>Alga rebozada en pan rallado</li>
-                                        </ul>
-                                        <b>Precios</b>
-                                        <ul>
-                                            <li>Estándar.................1.50WB</li>
-                                            <li>Salsa salada......+0.50WB</li>
-                                        </ul>
+                                    <section class="menu-dinamic-information">
+                                        <section class="text-section">
+                                            <p>Recién sacados de entre las rocas</p>
+                                            <b>Ingredientes</b>
+                                            <ul>
+                                                <li>Alga rebozada</li>
+                                            </ul>
+                                        </section>
+                                        <section class="text-section">
+                                            <b>Precio</b>
+                                            <table class="menu-table">
+                                                <tr>
+                                                    <th>Estandár</th>
+                                                    <td>1.50 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Salsa salada</th>
+                                                    <td>+ 0.20 WB</td>
+                                                </tr>
+                                            </table>
+                                        </section>
                                     </section>
                                 </section>
                             </section>
@@ -252,8 +317,9 @@
             </section>
         </section>
 
+        <!--Section con elemento del menú-->
         <section class="content-row">
-            <section class="flex-section flex-center">
+            <section class="flex-section flex-section-nocolumn flex-center">
                 <section class="menu-group-container">
                     <section class="menu-group-section">
                         <section class="menu-container">
@@ -267,18 +333,31 @@
                                             <h2>Batido de algas</h2>
                                         </section>
                                     </section>
-                                    <section class="text-section">
-                                        <p>Esencial para tener una comida completa (incluido en menús)</p>
-                                        <b>Ingredientes</b>
-                                        <ul>
-                                            <li>Alga batida</li>
-                                        </ul>
-                                        <b>Precios</b>
-                                        <ul>
-                                            <li>Pequeño.....1.00WB</li>
-                                            <li>Mediano......1.50WB</li>
-                                            <li>Grande.........2.00WB</li>
-                                        </ul>
+                                    <section class="menu-dinamic-information">
+                                        <section class="text-section">
+                                            <p>Esencial para tener una comida completa (incluido en menús)</p>
+                                            <b>Ingredientes</b>
+                                            <ul>
+                                                <li>Alga procesada</li>
+                                            </ul>
+                                        </section>
+                                        <section class="text-section">
+                                            <b>Precio</b>
+                                            <table class="menu-table">
+                                                <tr>
+                                                    <th>Pequeño</th>
+                                                    <td>1.00 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Mediano</th>
+                                                    <td>1.50 WB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Grande</th>
+                                                    <td>2.00 WB</td>
+                                                </tr>
+                                            </table>
+                                        </section>
                                     </section>
                                 </section>
                             </section>
@@ -289,6 +368,7 @@
         </section>
     </main>
     
+    <!--Pie de página con enlaces externos-->
     <footer>
         <nav id="bottom-nav-container">
             <section class="bottom-nav-section">

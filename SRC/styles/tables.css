@@ -25,9 +25,42 @@ td{
     border: 1px solid #201d1e;
 }
 
+.menu-table{
+    font-size: 1rem;
+    color: white;
+    width: 30%;
+    min-width: 300px;
+
+    th{
+        font-family: "Lexend", Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        width: 60%;
+        text-align: end;
+        background-color: #ffc862;
+        border: 5px solid #393837;
+        border-right: 0px;
+    }
+
+    td{
+        font-family: "Lexend", Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        text-align: start;
+        background-color: #ffc862;
+        border: 5px solid #393837;
+        border-left: 2.5px solid #393837;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     table{
         width: 80%;
+    }
+
+    .menu-table{
+        width: 80%;
+        min-width: 0px;
     }
 }
 
