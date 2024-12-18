@@ -11,7 +11,7 @@
 <p align="center"><i>Erik Vives, Juan Díaz y Luis Daniel</i></p>
 
 <p align="center">
-    <a href="https://elheyne.github.io/DAW-LLMM-B2--Practica/index.html"><img alt="Static Badge" src="https://img.shields.io/badge/vis%C3%ADtame-aqui-orange" alt="Link Visita"></a>
+    <a href="https://elheyne.github.io/DAW-LLMM-B2--Practica/index.html" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/vis%C3%ADtame-aqui-orange" alt="Link Visita"></a>
 </p>
 
 # Roles del Proyecto
