@@ -1,5 +1,15 @@
-# DAW-LLMM-B2-Practica
-Trabajo B2 de lenguaje de marcas de curso DAW 24-25. Mimebros de gurpo - Erik Vives y Luis Daniel
+<h1 align="center">DAW - Lenguaje de Marcas</h1>
+<h2 align="center">Práctica B2</h2>
+
+-----
+
+<p align="center">Trabajo B2 de lenguaje de marcas de curso DAW 24-25, CIFP Francesc de Borja Moll.</b>
+
+<p align="center"><i>Erik Vives, Juan Díaz y Luis Daniel</i></p>
+
+<p align="center">
+<img src="/SRC/resources/general/small-logo.png" width="25%">
+</p>
 
 # Roles del Proyecto
 
