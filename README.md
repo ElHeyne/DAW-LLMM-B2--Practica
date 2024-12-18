@@ -1,16 +1,14 @@
 <h1 align="center">DAW - Lenguaje de Marcas</h1>
 <h2 align="center">Práctica B2</h2>
 
------
-
 <p align="center">Trabajo B2 de lenguaje de marcas de curso DAW 24-25, CIFP Francesc de Borja Moll.</b>
 
-<p align="center"><i>Erik Vives, Juan Díaz y Luis Daniel</i></p>
 
 <p align="center">
-<img src="/SRC/resources/general/small-logo.png" width="25%">
+<img src="/SRC/resources/general/big-logo.png" width="25%">
 </p>
 
+<p align="center"><i>Erik Vives, Juan Díaz y Luis Daniel</i></p>
 # Roles del Proyecto
 
 ## Erik
