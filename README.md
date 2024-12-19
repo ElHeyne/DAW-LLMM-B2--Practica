@@ -43,33 +43,62 @@ Se estructura el proyecto dentro de una carpeta general "SRC" en la que se almac
 
 ## Documentación
 
-### Funciones Principales
+### Elementos Principales
 
 La web contiene varios elementos caracteristicos
 
-#### Index.html
+- **Index.html**
 
-Este archivo .html contiene elementos tipo *imagenes*, *listas*.
+Este archivo .html contiene elementos tipo **imagenes** y **listas**.
 
 Algunas de las imagenes son reactivas con la funcion "*hover*".
 
-### La idea
-Lo primero que necesitábamos era encontrar el tipo de web que queríamos hacer. Tras un rato, no solo nos decidimos sobre el tipo, sino también sobre su estilo. Nos dimos cuenta de que hacer una web de un restaurante podría dar para mucho, ya que se podría incluir las diferentes comidas además de apartados con otra información. En cuanto al estilo, lo que empezó como una broma acabó pareciendo una buena idea, ya que la estética de la serie animada Bob esponja tiene una estética muy característica e interesante, así que rápidamente encontramos fondos, logos e imágenes ideales para cumplir nuestro objetivo.
+<p align="center">
+<img src="/SRC/resources/markdown/CapturaIndex.png" width="65%">
+</p>
 
-- Una web sencilla y fácil de navegar
-- Un menú variado
-- Detalles cómicos
+- **Articles.html**
 
-## 2. Preparaciones previas al código
-Antes de comenzar con el html y el css, creamos un documento compartido en canva para hacer una especie de boceto del diseño de la página, una manera fácil de crearla e ir haciendo cambios rápidos si no nos convence. Así cuando pasáramos a programar en html y css tendríamos un modelo que seguir, y no estaríamos haciendo cambios a ciegas.
+Este archivo contiene elementos de tipo **imagenes**, **listas** y **tablas**.
 
-Otra preparación crucial previa al código de la web fue la creación de un repositorio de github, gracias al cual podíamos ir compartiendo nuestros cambios con el resto del grupo a través de los "push" y los "pull". Sin embargo, si se daba el caso de que dos personas alteraban la misma parte del documento al mismo tiempo, habría dado error a la hora de hacer el "commit" de la persona que hubiera tardado más en terminar su cambios. Para prevenir esto, separamos cada apartado de la web en un documento html diferente, cada uno asignado a un miembro del grupo distinto en cada momento.
+La estructura de este archivo denota que la estructura de la web en general es una coleccion de filas al estilo de un armario.
 
-- Crear mockup en canva
-- Preparar repositorio
-- Asignar roles
+<p align="center">
+<img src="/SRC/resources/markdown/CapturaArticles.png" width="65%">
+</p>
 
-## 3. HTML y CSS
+- **Detall.html**
+En este archivo solo encontramos **imagenes** y **video**.
+
+<p align="center">
+<img src="/SRC/resources/markdown/CapturaDetall.png" width="65%">
+</p>
+
+- **Info.html**
+Aqui se encuentran elementos como **imagenes** y **tablas**.
+
+<p align="center">
+<img src="/SRC/resources/markdown/CapturaInfo.png" width="65%">
+</p>
+
+### Tecnologias Involucradas
+
+- **Creación de Código**
+
+    - **[Visual Studio Code](https://code.visualstudio.com)** - Creacion, Edicion, Revisión
+
+- **Modificacion de Imagenes**
+
+    - **[Canva](https://www.canva.com)** - Creacion y Edicion
+    - **[RemoveBG](https://www.remove.bg)** - Eliminar Fondos
+    - **[ConvertIO](https://www.convertio.co)** - Conversión
+
+- **Modificacion de Video**
+    
+    - **[Youtube](https://www.youtube.com)** - Búsqueda de Vídeos
+    - **[Y2mate](https://www.y2mate.lol)** - Descarga de Vídeos
+
+
 
 ### Estructura HTML
 El proyecto HTML se estructura de la siguiente manera.
@@ -93,23 +122,7 @@ Se usa muy principalmente el recurso de las clases para diferenciar elementos en
 
 En los archivos donde es necesario se aplican las media querys necesarias.
 
-## 4. Tecnologias Usadas
-- HTML CSS ultima version para la estructura y diseño web
-- Canva para mockups
-- RemoveBG, paint, Autodesk para edicion de imagenes
-- Descargadores de videos de youtube para obtener el video de la burguercangreburguer
-
-Se han usado tecnologias gratuitas y sencillas de usar.
-
-## 5. Caracteristicas Principales
-- Diseño simple y minimalista
-- Elementos de imagen y video
-- Imagenes interactivas
-- Navegadores sencillos
-- Imagenes con hiperenlaces
-- Adaptabilidad en imagenes con elementos alt
-
-## 6. Capturas de Resoluciones
+## Capturas de Resoluciones
 ### Escritorio o PC
 ![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210402.png>)
 ### Teléfonos y Táblet
@@ -117,3 +130,18 @@ Se han usado tecnologias gratuitas y sencillas de usar.
 ![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210439.png>)
 ![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210455.png>)
 ![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210512.png>)
+
+## Diario de Desarrollo
+Lo primero que necesitábamos era encontrar el tipo de web que queríamos hacer. Tras un rato, no solo nos decidimos sobre el tipo, sino también sobre su estilo. Nos dimos cuenta de que hacer una web de un restaurante podría dar para mucho, ya que se podría incluir las diferentes comidas además de apartados con otra información. En cuanto al estilo, lo que empezó como una broma acabó pareciendo una buena idea, ya que la estética de la serie animada Bob esponja tiene una estética muy característica e interesante, así que rápidamente encontramos fondos, logos e imágenes ideales para cumplir nuestro objetivo.
+
+- Una web sencilla y fácil de navegar
+- Un menú variado
+- Detalles cómicos
+
+Antes de comenzar con el html y el css, creamos un documento compartido en canva para hacer una especie de boceto del diseño de la página, una manera fácil de crearla e ir haciendo cambios rápidos si no nos convence. Así cuando pasáramos a programar en html y css tendríamos un modelo que seguir, y no estaríamos haciendo cambios a ciegas.
+
+Otra preparación crucial previa al código de la web fue la creación de un repositorio de github, gracias al cual podíamos ir compartiendo nuestros cambios con el resto del grupo a través de los "push" y los "pull". Sin embargo, si se daba el caso de que dos personas alteraban la misma parte del documento al mismo tiempo, habría dado error a la hora de hacer el "commit" de la persona que hubiera tardado más en terminar su cambios. Para prevenir esto, separamos cada apartado de la web en un documento html diferente, cada uno asignado a un miembro del grupo distinto en cada momento.
+
+- Crear mockup en canva
+- Preparar repositorio
+- Asignar roles
