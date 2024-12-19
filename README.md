@@ -11,23 +11,49 @@
 <p align="center"><i>Erik Vives, Juan Díaz y Luis Daniel</i></p>
 
 <p align="center">
-    <a href="https://elheyne.github.io/DAW-LLMM-B2--Practica/index.html" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/vis%C3%ADtame-aqui-orange" alt="Link Visita"></a>
+    <a href="https://elheyne.github.io/DAW-LLMM-B2--Practica/index.html" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/VIS%C3%8DTAME-AQU%C3%8D-orange">
+</a>
 </p>
 
-# Roles del Proyecto
+## Estructura Archivos
 
-## Erik
-Programar HTML CSS, busqueda de imagenes, documentar readme, revisiones de resizable.
+```SRC/
+├── Resources/
+│   ├── article_elements/
+│   │   └── *.png
+│   ├── detall_elements/
+│   │   └── *.png
+│   ├── favicons/
+│   │   └── *.png
+│   ├── general/
+│   │   └── *.png
+│   ├── index_elements/
+│   │   └── *.png
+│   ├── info_elements/
+│   │   └── *.png
+│   └── markdown/
+│       └── *.png
+├── Styles/
+│   └── *.css
+└── *.html
+README
+```
 
-## Juan
-Buscar imagenes, crear textos, crear mockup, canvios en html y css.
+Se estructura el proyecto dentro de una carpeta general "SRC" en la que se almacenan todos los archivos .html al igual que se encuentran las carpetas "Styles" que contiene todos los archivos .css y la carpeta "Resources" que contiene todos los recursos multimedia, generalmente imagenes.
 
-## Luis
-Busqueda de imagenes, cambio de texto, edicion de imagenes, construccion de menu, programacion de html y css y documentar readme.
+## Documentación
 
-# Documentación
+### Funciones Principales
 
-## 1. La idea
+La web contiene varios elementos caracteristicos
+
+#### Index.html
+
+Este archivo .html contiene elementos tipo *imagenes*, *listas*.
+
+Algunas de las imagenes son reactivas con la funcion "*hover*".
+
+### La idea
 Lo primero que necesitábamos era encontrar el tipo de web que queríamos hacer. Tras un rato, no solo nos decidimos sobre el tipo, sino también sobre su estilo. Nos dimos cuenta de que hacer una web de un restaurante podría dar para mucho, ya que se podría incluir las diferentes comidas además de apartados con otra información. En cuanto al estilo, lo que empezó como una broma acabó pareciendo una buena idea, ya que la estética de la serie animada Bob esponja tiene una estética muy característica e interesante, así que rápidamente encontramos fondos, logos e imágenes ideales para cumplir nuestro objetivo.
 
 - Una web sencilla y fácil de navegar
