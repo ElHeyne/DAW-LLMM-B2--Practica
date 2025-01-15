@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/images.css">
     <link rel="stylesheet" href="styles/tables.css">
     <link rel="stylesheet" href="styles/lists.css">
+    <link rel="stylesheet" href="styles/forms.css">
     
     <!--Fuente Custom Bob Esponja-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,6 +113,30 @@
             </section>
         </section>
     </main>
+
+    <!--Formulario de registro-->
+    <section class="flex-section flex-column">
+        <form action="#">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" size="40">
+            <br>
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email" size="40">
+            <br>
+            <section class="flex-section flex-space-between">
+                <label>Chum Bucket Fan</label>
+                <input type="radio" name="chum" value="c">
+            </section>
+            <section class="flex-section flex-space-between">
+                <label>Krusty Krab Enjoyer</label>
+                <input type="radio" name="krab" value="k">
+            </section>
+            <section>
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Eliminar">
+            </section>
+        </form>
+    </section>
     
     <!--Pie de página con enlaces externos-->
     <footer>

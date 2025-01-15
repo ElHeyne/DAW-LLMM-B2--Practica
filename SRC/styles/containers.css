@@ -110,6 +110,14 @@
         align-items: center;
     }
 
+    .flex-space-around{
+        justify-content: space-around;
+    }
+
+    .flex-space-between{
+        justify-content: space-between;
+    }
+
 /* || CONTENEDORES DE TITULO*/
 .title-container{
     background-color: #201d1e;
