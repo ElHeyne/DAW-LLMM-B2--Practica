@@ -58,7 +58,7 @@ Este archivo .html contiene elementos tipo **imagenes** y **listas**.
 Algunas de las imagenes son reactivas con la funcion "*hover*".
 
 <p align="center">
-<img src="/SRC/resources/markdown/CapturaIndex.png" width="65%">
+<img src="/SRC/resources/markdown/CapturaIndex.png" width="65%" alt="Captura de pantalla de index.html">
 </p>
 
 - **Articles.html**
@@ -68,21 +68,21 @@ Este archivo contiene elementos de tipo **imagenes**, **listas** y **tablas**.
 La estructura de este archivo denota que la estructura de la web en general es una coleccion de filas al estilo de un armario.
 
 <p align="center">
-<img src="/SRC/resources/markdown/CapturaArticles.png" width="65%">
+<img src="/SRC/resources/markdown/CapturaArticles.png" width="65%"alt="Captura de pantalla de articles.html">
 </p>
 
 - **Detall.html**
 En este archivo solo encontramos **imagenes** y **video**.
 
 <p align="center">
-<img src="/SRC/resources/markdown/CapturaDetall.png" width="65%">
+<img src="/SRC/resources/markdown/CapturaDetall.png" width="65%" alt="Captura de pantalla de detall.html">
 </p>
 
 - **Info.html**
 Aqui se encuentran elementos como **imagenes** y **tablas**.
 
 <p align="center">
-<img src="/SRC/resources/markdown/CapturaInfo.png" width="65%">
+<img src="/SRC/resources/markdown/CapturaInfo.png" width="65%" alt="Captura de pantalla de info.html">
 </p>
 
 ### Tecnologias Involucradas
@@ -128,12 +128,12 @@ En los archivos donde es necesario se aplican las media querys necesarias.
 
 ## Capturas de Resoluciones
 ### Escritorio o PC
-![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210402.png>)
+![Imagen de Ejemplo](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210402.png>)
 ### Teléfonos y Táblet
-![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210426.png>)
-![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210439.png>)
-![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210455.png>)
-![alt text](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210512.png>)
+![Imagen de Ejemplo](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210426.png>)
+![Imagen de Ejemplo](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210439.png>)
+![Imagen de Ejemplo](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210455.png>)
+![Imagen de Ejemplo](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210512.png>)
 
 ## Diario de Desarrollo
 Lo primero que necesitábamos era encontrar el tipo de web que queríamos hacer. Tras un rato, no solo nos decidimos sobre el tipo, sino también sobre su estilo. Nos dimos cuenta de que hacer una web de un restaurante podría dar para mucho, ya que se podría incluir las diferentes comidas además de apartados con otra información. En cuanto al estilo, lo que empezó como una broma acabó pareciendo una buena idea, ya que la estética de la serie animada Bob esponja tiene una estética muy característica e interesante, así que rápidamente encontramos fondos, logos e imágenes ideales para cumplir nuestro objetivo.
@@ -183,7 +183,7 @@ El codigo usado en uno de ellos es:
 ## Explicación de Formularios
 
 ### Formulario de Contacto
-![alt text](<SRC\resources\markdown\Captura de pantalla 2025-01-17 160644.png>)
+![Captura de pantalla del formulario](<SRC/resources/markdown/Formulario1.png>)
 
 Compuesto por varios campos de entrada de texto y de selección donde el usuario introduce sus datos y su restaurante favorito para posteriormente enviarlo.
 
@@ -192,7 +192,7 @@ Este formulario contiene tanto un boton de envió como uno de limpieza, el cual 
 Tambien se incluyen expresiones regulares en el campo del nombre
 
 ### Formulario de Checkbox
-![alt text](<SRC\resources\markdown\Captura de pantalla 2025-01-17 161621.png>)
+![Captura de pantalla del formulario](<SRC/resources/markdown/Formulario2.png>)
 
 Este formulario, mas simple, permite introducir los alergenos del usuario mediante checkbox. Tambien se presenta como un menú desplegable.
 
