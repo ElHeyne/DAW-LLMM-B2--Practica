@@ -118,10 +118,10 @@
     <section class="flex-section flex-column">
         <form action="#" class="form-registro">
             <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" size="40">
+            <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required pattern="^[a-z0-9._\/\-]{4,40}$">
             <br>
             <label for="email">E-mail: </label>
-            <input type="text" id="email" name="email" size="40">
+            <input type="text" id="email" name="email" size="40" required>
             <br>
             <section class="flex-section flex-space-between">
                 <label>Chum Bucket Fan</label>

@@ -41,11 +41,15 @@ README
 
 Se estructura el proyecto dentro de una carpeta general "SRC" en la que se almacenan todos los archivos .html al igual que se encuentran las carpetas "Styles" que contiene todos los archivos .css y la carpeta "Resources" que contiene todos los recursos multimedia, generalmente imagenes.
 
+## División de Tareas Generales
+
+- Erik: Diseño de web, Programación, Aplicar metadata responsive en CSS.
+- Luis: Diseño de web, Diseño CSS, Crear Formularios, Edición de imagenes.
+- Juan: Diseño de web, Búsqueda de imagenes, Solucionar y revisar problemas.
+
 ## Documentación
 
-### Elementos Principales
-
-La web contiene varios elementos caracteristicos
+### Paginas Principales
 
 - **Index.html**
 
@@ -145,3 +149,57 @@ Otra preparación crucial previa al código de la web fue la creación de un rep
 - Crear mockup en canva
 - Preparar repositorio
 - Asignar roles
+
+## Implementación de Formularios
+Se añaden dos formularios en las paginas de **articles.html** y **info.html**.
+
+El codigo usado en uno de ellos es:
+```
+<!--Formulario de registro-->
+    <section class="flex-section flex-column">
+        <form action="#" class="form-registro">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required pattern="^[a-z0-9._\/\-]{4,40}$">
+            <br>
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email" size="40" required>
+            <br>
+            <section class="flex-section flex-space-between">
+                <label>Chum Bucket Fan</label>
+                <input type="radio" name="chumOrKrab" value="c">
+            </section>
+            <section class="flex-section flex-space-between">
+                <label>Krusty Krab Enjoyer</label>
+                <input type="radio" name="chumOrKrab" value="k">
+            </section>
+            <section>
+                <br>
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Eliminar">
+            </section>
+        </form>
+    </section>
+```
+## Explicación de Formularios
+
+### Formulario de Contacto
+![alt text](<SRC\resources\markdown\Captura de pantalla 2025-01-17 160644.png>)
+
+Compuesto por varios campos de entrada de texto y de selección donde el usuario introduce sus datos y su restaurante favorito para posteriormente enviarlo.
+
+Este formulario contiene tanto un boton de envió como uno de limpieza, el cual elimina los datos introducidos.
+
+Tambien se incluyen expresiones regulares en el campo del nombre
+
+### Formulario de Checkbox
+![alt text](<SRC\resources\markdown\Captura de pantalla 2025-01-17 161621.png>)
+
+Este formulario, mas simple, permite introducir los alergenos del usuario mediante checkbox. Tambien se presenta como un menú desplegable.
+
+## Expresiones Regulares
+La unica expresion regular utilizada es en el formulario de contacto:
+```
+pattern="^[a-z0-9._\/\-]{4,40}$"
+```
+
+Este solo permite introducir, en un rango de 4 a 40 caracteres, valores alfanumericos y caractéres especiales.
