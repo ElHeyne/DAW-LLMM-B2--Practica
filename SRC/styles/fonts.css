@@ -54,7 +54,7 @@ h2 {
 }
 
     .top-nav-link:hover{
-        color: #fcba2c;
+        color: var(--hover-yellow);
         font-weight: 600;
     }
 

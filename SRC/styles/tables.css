@@ -5,7 +5,7 @@ table{
     max-width: 1200px;
     border-collapse: collapse;
     margin: 2rem;
-    border: 2px solid #201d1e;
+    border: 2px solid var(--dark-gray);
 }
 
 th{
@@ -15,14 +15,14 @@ th{
     color: white;
     text-align: center;
     padding: 8px;
-    background-color: #201d1e;
-    border: 1px solid #201d1e;
+    background-color: var(--dark-gray);
+    border: 1px solid var(--dark-gray);
 }
 
 td{
     padding: 8px;
-    background-color: #ffc862;
-    border: 1px solid #201d1e;
+    background-color: var(--dark-yellow);
+    border: 1px solid var(--dark-gray);
 }
 
 .menu-table{
@@ -37,18 +37,18 @@ td{
         font-weight: bold;
         width: 60%;
         text-align: end;
-        background-color: #201d1e;
-        border: 5px solid #393837;
+        background-color: var(--dark-gray);
+        border: 5px solid var(--light-gray);
         border-right: 0px;
     }
 
     td{
-        color: #201d1e;
+        color: var(--dark-gray);
         font-family: "Lexend", Arial, Helvetica, sans-serif;
         font-size: 1rem;
         text-align: start;
-        background-color: #ffc862;
-        border: 5px solid #393837;
+        background-color: var(--dark-yellow);
+        border: 5px solid var(--light-gray);
     }
     
 }

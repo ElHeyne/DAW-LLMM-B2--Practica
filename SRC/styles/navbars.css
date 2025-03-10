@@ -2,8 +2,8 @@
     display: block;
     margin-top: 22px;
     margin-bottom: 22px;
-    background-color: #201d1e;
-    border-bottom: 1px solid #393837;
+    background-color: var(--dark-gray);
+    border-bottom: 1px solid var(--dark-gray);
 }
 
 .top-nav-section{
@@ -30,8 +30,8 @@
     position: sticky;
     bottom: 100%;
     margin-top: 22px;
-    background-color: #201d1e;
-    border-bottom: 1px solid #393837;
+    background-color: var(--dark-gray);
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .bottom-nav-section{

@@ -5,7 +5,7 @@
 
 /*Declaración del color de fondo y eliminacion de margenes y padding*/
 body {
-    background-color: #ffde62;
+    background-color: var(--background-gray);
     margin: 0;
     padding: 0;
 }
