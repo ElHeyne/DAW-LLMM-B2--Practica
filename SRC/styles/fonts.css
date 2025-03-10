@@ -1,48 +1,27 @@
 /* | FUENTES PRINCIPALES */
 
 /* || FUENTE P */
-p{
+p,b,i{
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color:white;
+    transition: all 0.3s;
 }
 
-b{
-    font-family: "Lexend", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color:white;
-}
-
-i{
-    font-family: "Lexend", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color:white;
-}
 
 /* || FUENTE H1 */
 
-h1 {
+h1,h2 {
     font-family: "Slackey", serif;
     font-size: 1.5rem;
     color: white;
     margin: 0;
+    transition: all 0.3s;
 }
 
-    .h1-center{
+    .h1-center, .h2-center{
         display: block;
         text-align: center;
-    }
-
-h2 {
-    font-family: "Slackey", serif;
-    font-size: 1.5rem;
-    color: white;
-    margin: 0;
-}
-
-    .h2-center{
-        display: block;
-        justify-self: center;
     }
 
 .top-nav-link{
@@ -53,13 +32,25 @@ h2 {
     transition: color 0.15s, font-weight 0.15s;
 }
 
-    .top-nav-link:hover{
-        color: #fcba2c;
-        font-weight: 600;
-    }
+.top-nav-link.modo-claro{
+    color: black;
+}
+
+.top-nav-link:hover{
+    color: var(--hover-yellow);
+    font-weight: 600;
+}
 
 @media screen and (max-width: 400px){
     .top-nav-link{
         font-size: 0.75rem;
     }
+}
+
+p.modo-claro,
+b.modo-claro,
+i.modo-claro,
+h1.modo-claro,
+h2.modo-claro{
+    color:black;
 }

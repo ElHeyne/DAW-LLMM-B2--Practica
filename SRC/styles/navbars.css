@@ -2,8 +2,14 @@
     display: block;
     margin-top: 22px;
     margin-bottom: 22px;
-    background-color: #201d1e;
-    border-bottom: 1px solid #393837;
+    background-color: var(--dark-gray);
+    border-bottom: 1px solid var(--dark-gray);
+    transition: all 0.3s;
+}
+
+#top-nav-container.modo-claro{
+    background-color: var(--clear-dark-gray);
+    border-bottom: 1px solid var(--clear-dark-gray);
 }
 
 .top-nav-section{
@@ -30,8 +36,14 @@
     position: sticky;
     bottom: 100%;
     margin-top: 22px;
-    background-color: #201d1e;
-    border-bottom: 1px solid #393837;
+    background-color: var(--dark-gray);
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+}
+
+#bottom-nav-container.modo-claro{
+    background-color: var(--clear-dark-gray);
+    border-bottom: 1px solid var(--clear-light-gray);
 }
 
 .bottom-nav-section{
@@ -90,4 +102,15 @@
         margin: 0.5dvh;
         height: 10px;
     }
+}
+
+
+/*Icono Cambio de Tema*/
+.bx{
+    color: white;
+    transition: all .3s;
+}
+
+.bx:hover {
+    color: var(--hover-yellow);
 }

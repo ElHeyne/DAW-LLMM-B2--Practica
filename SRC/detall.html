@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/images.css">
     <link rel="stylesheet" href="styles/tables.css">
     <link rel="stylesheet" href="styles/lists.css">
+    <link rel="stylesheet" href="styles/variables.css">
     
     <!--Fuente Custom Bob Esponja-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +28,22 @@
         
     <!--Icono de la pagina-->
     <link rel="icon" type="image/x-icon" href="resources/favicons/favicon.ico">
-    <title>Fórmula Secreta</title>
+
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--JavaScript Externo-->
+    <script src="scripts/modo_claro_oscuro.js" defer></script>
+    
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--JavaScript Externo-->
+    <script src="scripts/modo_claro_oscuro.js" defer></script>
+
+    <title>Información</title>
 </head>
-<body background="resources/detall_elements/tile_background.jpeg">
+<body>
     
     <!--Header con enlaces de navegacion-->
     <header>
@@ -42,6 +56,9 @@
                     <li><a href="detall.html" class="top-nav-link">Fórmula Secreta</a></li>
 
                     <li><a href="info.html" class="top-nav-link">Info</a></li>
+                </ul>
+                <ul style="margin-left: auto;">
+                    <li onclick="modo_claro_oscuro()"><i id="toggle" class='bx bx-sun'></i></li>
                 </ul>
             </section>
         </nav>
