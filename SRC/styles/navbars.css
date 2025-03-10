@@ -4,6 +4,12 @@
     margin-bottom: 22px;
     background-color: var(--dark-gray);
     border-bottom: 1px solid var(--dark-gray);
+    transition: all 0.3s;
+}
+
+#top-nav-container.modo-claro{
+    background-color: var(--clear-dark-gray);
+    border-bottom: 1px solid var(--clear-dark-gray);
 }
 
 .top-nav-section{
@@ -32,6 +38,12 @@
     margin-top: 22px;
     background-color: var(--dark-gray);
     border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+}
+
+#bottom-nav-container.modo-claro{
+    background-color: var(--clear-dark-gray);
+    border-bottom: 1px solid var(--clear-light-gray);
 }
 
 .bottom-nav-section{

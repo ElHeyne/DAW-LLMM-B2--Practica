@@ -6,6 +6,11 @@ table{
     border-collapse: collapse;
     margin: 2rem;
     border: 2px solid var(--dark-gray);
+    transition: all 0.3s;
+}
+
+table.modo-claro{
+    border: 2px solid var(--clear-dark-gray);
 }
 
 th{
@@ -17,12 +22,26 @@ th{
     padding: 8px;
     background-color: var(--dark-gray);
     border: 1px solid var(--dark-gray);
+    transition: all 0.3s;
+}
+
+th.modo-claro{
+    color: black;
+    background-color: var(--clear-dark-gray);
+    border: 1px solid var(--clear-dark-gray);
 }
 
 td{
     padding: 8px;
     background-color: var(--dark-yellow);
     border: 1px solid var(--dark-gray);
+    transition: all 0.3s;
+}
+
+td.modo-claro{
+    color: black;
+    background-color: var(--clear-dark-yellow);
+    border: 1px solid var(--clear-dark-yellow);
 }
 
 .menu-table{
@@ -30,28 +49,45 @@ td{
     color: white;
     width: 30%;
     min-width: 300px;
-
-    th{
-        font-family: "Lexend", Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        font-weight: bold;
-        width: 60%;
-        text-align: end;
-        background-color: var(--dark-gray);
-        border: 5px solid var(--light-gray);
-        border-right: 0px;
-    }
-
-    td{
-        color: var(--dark-gray);
-        font-family: "Lexend", Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        text-align: start;
-        background-color: var(--dark-yellow);
-        border: 5px solid var(--light-gray);
-    }
-    
+    transition: all 0.3s;
 }
+
+.menu-table.modo-claro{
+    color: black;
+}
+
+.menu-table th{
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 60%;
+    text-align: end;
+    background-color: var(--dark-gray);
+    border: 5px solid var(--light-gray);
+    border-right: 0px;
+    transition: all 0.3s;
+}
+
+.menu-table th.modo-claro{
+    background-color: var(--clear-dark-gray);
+    border: 5px solid var(--clear-light-gray);
+}
+
+.menu-table td{
+    color: var(--dark-gray);
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: start;
+    background-color: var(--dark-yellow);
+    border: 5px solid var(--light-gray);
+    transition: all 0.3s;
+}
+
+.menu-table td.modo-claro{
+    background-color: var(--clear-dark-yellow);
+    border: 5px solid var(--clear-light-gray);
+}
+    
 
 @media screen and (max-width: 768px) {
     table{
