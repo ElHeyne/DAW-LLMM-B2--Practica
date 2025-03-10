@@ -8,6 +8,10 @@ p,b,i{
     transition: all 0.3s;
 }
 
+i{
+    font-size: 1.5rem;
+}
+
 
 /* || FUENTE H1 */
 
