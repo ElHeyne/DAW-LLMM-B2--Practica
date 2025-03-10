@@ -60,3 +60,10 @@ input{
     background-color: var(--dark-gray);
     font-size: 1.3rem;
 }
+
+.listaForm {
+    display:none;
+}
+.active {
+    display:block
+}
