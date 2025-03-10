@@ -28,8 +28,21 @@
         
     <!--Icono de la pagina-->
     <link rel="icon" type="image/x-icon" href="resources/favicons/favicon.ico">
-    <title>Inicio</title>
-</head>
+
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--JavaScript Externo-->
+    <script src="scripts/modo_claro_oscuro.js" defer></script>
+    
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--JavaScript Externo-->
+    <script src="scripts/modo_claro_oscuro.js" defer></script>
+
+    <title>Información</title>
+ </head>
 <body>
     
     <!--Header con enlaces de navegacion-->
@@ -44,12 +57,15 @@
 
                     <li><a href="info.html" class="top-nav-link">Info</a></li>
                 </ul>
+                <ul style="margin-left: auto;">
+                    <li onclick="modo_claro_oscuro()"><i id="toggle" class='bx bx-sun'></i></li>
+                </ul>
             </section>
         </nav>
     </header>
 
     <!--Main con el contenido relevante-->
-    <main">
+    <main>
         <!--Aqui van los elementos para la descripción del restaurante-->
         <section class="content-row">
             <section class="flex-section">
