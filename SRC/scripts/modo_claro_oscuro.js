@@ -30,7 +30,9 @@ function modo_claro_oscuro() {
     /*FORMULARIOS*/
     document.querySelectorAll(".form-alergenos").forEach(el => el.classList.toggle("modo-claro"));
     document.querySelectorAll("input").forEach(el => el.classList.toggle("modo-claro"));
+    document.querySelectorAll("label").forEach(el => el.classList.toggle("modo-claro"));
     document.querySelectorAll(".dropdown-content").forEach(el => el.classList.toggle("modo-claro"));
+    document.querySelectorAll(".form-registro").forEach(el => el.classList.toggle("modo-claro"));
    
     /*TABLE*/
     document.querySelectorAll("table").forEach(el => el.classList.toggle("modo-claro"));
@@ -41,6 +43,9 @@ function modo_claro_oscuro() {
     /*NAVBAR*/
     document.querySelectorAll("#top-nav-container").forEach(el => el.classList.toggle("modo-claro"));
     document.querySelectorAll("#bottom-nav-container").forEach(el => el.classList.toggle("modo-claro"));
+    
+    /*OTROS*/
+    document.querySelectorAll("button").forEach(el => el.classList.add("modo-claro"));
 
     if (mode_toggle.classList.contains("bx-sun")){
         mode_toggle.classList.replace("bx-sun", "bx-moon");
@@ -84,9 +89,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("ul").forEach(el => el.classList.add("modo-claro"));
 
         /*FORMULARIOS*/
-        document.querySelectorAll(".form-alergenos").forEach(el => el.classList.add("modo-claro"));
-        document.querySelectorAll("input").forEach(el => el.classList.add("modo-claro"));
-        document.querySelectorAll(".dropdown-content").forEach(el => el.classList.add("modo-claro"));
+        document.querySelectorAll(".form-alergenos").forEach(el => el.classList.toggle("modo-claro"));
+        document.querySelectorAll("input").forEach(el => el.classList.toggle("modo-claro"));
+        document.querySelectorAll("label").forEach(el => el.classList.toggle("modo-claro"));
+        document.querySelectorAll(".dropdown-content").forEach(el => el.classList.toggle("modo-claro"));
+        document.querySelectorAll(".form-registro").forEach(el => el.classList.toggle("modo-claro"));
     
         /*TABLE*/
         document.querySelectorAll("table").forEach(el => el.classList.add("modo-claro"));
@@ -97,6 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
         /*NAVBAR*/
         document.querySelectorAll("#top-nav-container").forEach(el => el.classList.add("modo-claro"));
         document.querySelectorAll("#bottom-nav-container").forEach(el => el.classList.add("modo-claro"));
+
+        /*OTROS*/
+        document.querySelectorAll("button").forEach(el => el.classList.add("modo-claro"));
 
         mode_toggle.classList.replace("bx-sun", "bx-moon");
     }

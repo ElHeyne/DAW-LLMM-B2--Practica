@@ -26,3 +26,29 @@ header {
 footer {
     display: block;
 }
+
+.button {
+    border: none;
+    padding: 8px 12px;
+    background-color: var(--dark-gray);
+    color: white;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: var(--light-gray);
+}
+
+.button.modo-claro{
+    background-color: var(--clear-dark-gray);
+    color: black;
+}
+
+.button.modo-claro:hover{
+    background-color: var(--clear-light-gray);
+}
+
+.btn-full-width{
+    width: 100%;
+    margin: 0 10px;
+}

@@ -6,12 +6,11 @@ document.getElementById("comForm").addEventListener("submit", (event) => {
 let comentarioLista = [];
 
 function addComentario() {
-    const listaCom = document.getElementById("listaCom");
-    
-    listaCom.innerHTML = '';
-    
     let comentario = document.getElementById("com").value;
     if (comentario) {  // Verificamos que el comentario no esté vacío
+        const listaCom = document.getElementById("listaCom");
+        listaCom.innerHTML = '';
+        
         comentarioLista.push(comentario);
         console.log(comentarioLista);
           // Mostramos la lista de comentarios después de añadir uno nuevo
