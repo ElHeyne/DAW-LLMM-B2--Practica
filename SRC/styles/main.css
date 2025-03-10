@@ -8,6 +8,11 @@ body {
     background-color: var(--background-gray);
     margin: 0;
     padding: 0;
+    transition: all 0.3s;
+}
+
+body.modo-claro {
+    background-color: var(--background-yellow);
 }
 
 /*Declaración del estilo header. Tipo bloque para ocupar todo el ancho de la ventana con margenes para el contenido.*/
