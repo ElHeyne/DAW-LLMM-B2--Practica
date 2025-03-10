@@ -135,7 +135,7 @@
     transition: all 0.3s;
 }
 
-.text-container.modo-claro{
+.title-container.modo-claro{
     background-color: var(--clear-dark-gray);
 }
 
