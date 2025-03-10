@@ -140,7 +140,7 @@
 }
 
 .title-container-no-background{
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .side-title-container{
