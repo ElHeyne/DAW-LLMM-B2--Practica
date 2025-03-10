@@ -48,3 +48,10 @@ input{
     background-color: #201d1e;
     font-size: 1.3rem;
 }
+
+.lista {
+    display:none;
+}
+.active {
+    display:block
+}

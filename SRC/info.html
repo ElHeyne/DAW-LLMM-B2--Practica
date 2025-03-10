@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="styles/tables.css">
     <link rel="stylesheet" href="styles/lists.css">
     <link rel="stylesheet" href="styles/forms.css">
+
+    <!--Scripts-->
+    <script src="comentarios.js" defer></script>
     
     <!--Fuente Custom Bob Esponja-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,6 +140,18 @@
                 <input type="reset" value="Eliminar">
             </section>
         </form>
+    </section>
+
+    <!--Formulario de comentarios-->
+    <section class="flex-section flex-column">
+        <button class ="boton" onclick="mostrarOcultarComentario()">Mostrar/Ocultar comentarios</button>
+        <form id="comForm">
+            <label for="com">Comentario:</label><br>
+            <input type="text" id="com" name="com"><br>
+            <input type="button" onclick="addComentario()">
+            <ul class= "lista active" id = "listaCom">
+            </ul>
+        </form> 
     </section>
     
     <!--Pie de página con enlaces externos-->
