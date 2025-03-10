@@ -1,0 +1,17 @@
+:root {
+    /*Colores Modo Oscuro*/
+    --light-gray: #393837;
+    --dark-gray: #201d1e;
+    --dark-yellow: #ffc862;
+
+    --background-gray: #2b2b2b;
+
+
+
+    /*Colores Modo Claro*/
+    --background-yellow: #ffde62;
+
+    /*Colores generales*/
+    --hover-yellow: #fcba2c;
+}
+
