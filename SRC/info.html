@@ -135,40 +135,44 @@
     </main>
 
     <!--Formulario de registro-->
-    <section class="flex-section flex-column">
-        <form action="#" class="form-registro">
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required pattern="^[a-z0-9._\/\-]{4,40}$">
-            <br>
-            <label for="email">E-mail: </label>
-            <input type="text" id="email" name="email" size="40" required>
-            <br>
-            <section class="flex-section flex-space-between">
-                <label>Chum Bucket Fan</label>
-                <input type="radio" name="chumOrKrab" value="c">
-            </section>
-            <section class="flex-section flex-space-between">
-                <label>Krusty Krab Enjoyer</label>
-                <input type="radio" name="chumOrKrab" value="k">
-            </section>
-            <section>
+    <section class="flex-section flex-justify-center">
+        <section class="content-row">
+            <form action="#" class="form-registro">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required pattern="^[a-z0-9._\/\-]{4,40}$">
                 <br>
-                <input type="submit" value="Enviar"> 
-                <input type="reset" value="Eliminar">
-            </section>
-        </form>
+                <label for="email">E-mail: </label>
+                <input type="text" id="email" name="email" size="40" required>
+                <br>
+                <section class="flex-section flex-space-between">
+                    <label>Chum Bucket Fan</label>
+                    <input type="radio" name="chumOrKrab" value="c">
+                </section>
+                <section class="flex-section flex-space-between">
+                    <label>Krusty Krab Enjoyer</label>
+                    <input type="radio" name="chumOrKrab" value="k">
+                </section>
+                <section>
+                    <br>
+                    <input type="submit" value="Enviar"> 
+                    <input type="reset" value="Eliminar">
+                </section>
+            </form>
+        </section>
     </section>
 
     <!--Formulario de comentarios-->
-    <section class="flex-section flex-column">
-        <button class ="boton" onclick="mostrarOcultarComentario()">Mostrar/Ocultar comentarios</button>
-        <form id="comForm">
-            <label for="com">Comentario:</label><br>
-            <input type="text" id="com" name="com"><br>
-            <input type="button" onclick="addComentario()">
-            <ul class= "listaForm active" id = "listaCom">
-            </ul>
-        </form> 
+    <section class="flex-section flex-justify-center">
+        <section class="content-row">
+            <button class ="boton" onclick="mostrarOcultarComentario()">Mostrar/Ocultar comentarios</button>
+            <form id="comForm">
+                <label for="com">Comentario:</label><br>
+                <input type="text" id="com" name="com"><br>
+                <input type="button" onclick="addComentario()" value="Enviar Comentario">
+                <ul class= "listaForm active" id = "listaCom">
+                </ul>
+            </form>
+        </section>
     </section>
     
     <!--Pie de página con enlaces externos-->
