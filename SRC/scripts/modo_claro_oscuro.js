@@ -45,7 +45,7 @@ function modo_claro_oscuro() {
     document.querySelectorAll("#bottom-nav-container").forEach(el => el.classList.toggle("modo-claro"));
     
     /*OTROS*/
-    document.querySelectorAll("button").forEach(el => el.classList.add("modo-claro"));
+    document.querySelectorAll("button").forEach(el => el.classList.toggle("modo-claro"));
 
     if (mode_toggle.classList.contains("bx-sun")){
         mode_toggle.classList.replace("bx-sun", "bx-moon");

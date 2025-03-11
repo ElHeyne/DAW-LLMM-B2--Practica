@@ -11,6 +11,7 @@
 
 label{
     color: white;
+    transition: all 0.3s;
 }
 
 label.modo-claro{
