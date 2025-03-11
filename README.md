@@ -144,4 +144,69 @@ Otra preparación crucial previa al código de la web fue la creación de un rep
 
 - Crear mockup en canva
 - Preparar repositorio
+<<<<<<< Updated upstream
 - Asignar roles
+=======
+- Asignar roles
+
+## Implementación de Formularios
+Se añaden dos formularios en las paginas de **articles.html** y **info.html**.
+
+El codigo usado en uno de ellos es:
+```
+<!--Formulario de registro-->
+    <section class="flex-section flex-column">
+        <form action="#" class="form-registro">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required pattern="^[a-z0-9._\/\-]{4,40}$">
+            <br>
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email" size="40" required>
+            <br>
+            <section class="flex-section flex-space-between">
+                <label>Chum Bucket Fan</label>
+                <input type="radio" name="chumOrKrab" value="c">
+            </section>
+            <section class="flex-section flex-space-between">
+                <label>Krusty Krab Enjoyer</label>
+                <input type="radio" name="chumOrKrab" value="k">
+            </section>
+            <section>
+                <br>
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Eliminar">
+            </section>
+        </form>
+    </section>
+```
+## Explicación de Formularios
+
+### Formulario de Contacto
+![Captura de pantalla del formulario](<SRC/resources/markdown/Formulario1.png>)
+
+Compuesto por varios campos de entrada de texto y de selección donde el usuario introduce sus datos y su restaurante favorito para posteriormente enviarlo.
+
+Este formulario contiene tanto un boton de envió como uno de limpieza, el cual elimina los datos introducidos.
+
+Tambien se incluyen expresiones regulares en el campo del nombre
+
+### Formulario de Checkbox
+![Captura de pantalla del formulario](<SRC/resources/markdown/Formulario2.png>)
+
+Este formulario, mas simple, permite introducir los alergenos del usuario mediante checkbox. Tambien se presenta como un menú desplegable.
+
+## Expresiones Regulares
+La unica expresion regular utilizada es en el formulario de contacto:
+```
+pattern="^[a-z0-9._\/\-]{4,40}$"
+```
+
+Este solo permite introducir, en un rango de 4 a 40 caracteres, valores alfanumericos y caractéres especiales.
+
+>>>>>>> Stashed changes
+
+| Integrante | Tareas Realizadas | Tiempo Dedicado | Descripcion del trabajo |
+|:----:|:---|:---:|:---|
+| Erik | Adaptación del Javascript a la pagina html y css | 9 horas | Con el Javascript creado por el compañero Luis lo pulio y lo adapto a las etiquetas del html y los estilos css| 
+| Luis | Creación del Javascript | 15 horas | Responsable de la creación de la parte de Javascript y las imagenes del carrusel |
+| Juan | Actualización del readme | 2 horas | Responsable de la actualización del readme que especifica que ha hecho cada compañero |
