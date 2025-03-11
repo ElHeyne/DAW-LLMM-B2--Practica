@@ -15,6 +15,14 @@
 </a>
 </p>
 
+## Trabajo del Equipo
+
+| Integrante | Tareas Realizadas | Tiempo Dedicado | Descripcion del trabajo |
+|:----:|:---|:---:|:---|
+| Erik | Creación de la estructura base del HTML y CSS, Adaptación del Javascript a la pagina html y css | 30 horas | Con el Javascript creado por el compañero Luis lo pulio y lo adapto a las etiquetas del html y los estilos css y a parte creo los estilos y estructuras base del html y css| 
+| Luis | Creación del Javascript, adaptación de estructuras HTML, creación de formularios. | 15 horas | Responsable de la creación de la parte de Javascript y las imagenes del carrusel y de la adaptación de las bases de erik para crear nuevas estructuras html y css |
+| Juan | Actualización del readme, revision de imagenes, revisión de funcionalidades  | 10 horas | Responsable de la actualización del readme que especifica que ha hecho cada compañero, busqueda, adaptación y aplicación de imagenes. Revisión de funcionalidades|
+
 ## Estructura Archivos
 
 ```SRC/
@@ -40,12 +48,6 @@ README
 ```
 
 Se estructura el proyecto dentro de una carpeta general "SRC" en la que se almacenan todos los archivos .html al igual que se encuentran las carpetas "Styles" que contiene todos los archivos .css y la carpeta "Resources" que contiene todos los recursos multimedia, generalmente imagenes.
-
-## División de Tareas Generales
-
-- Erik: Diseño de web, Programación, Aplicar metadata responsive en CSS.
-- Luis: Diseño de web, Diseño CSS, Crear Formularios, Edición de imagenes.
-- Juan: Diseño de web, Búsqueda de imagenes, Solucionar y revisar problemas.
 
 ## Documentación
 
