@@ -44,6 +44,7 @@
 
     <!--JavaScript Externo-->
     <script src="scripts/modo_claro_oscuro.js" defer></script>
+    <script src="scripts/array_objetos.js" defer></script>
 
     <title>Información</title>
 </head>
@@ -401,6 +402,41 @@
                                 </section>
                             </section>
                         </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="content-row">
+            <section class="flex-section flex-column flex-align-center">
+                <section class="title-container">
+                    <section class="title-section">
+                        <h1>¿Quieres Filtrar Por Precio?</h1>
+                    </section>
+                </section>
+                <section class="text-container">
+                    <section class="text-section text-section-right">
+                        <p>Para filtrar por precio puedes usar los botones de aqui abajo para introducir un precio máximo del plato y para ordenar los platos.</p>
+                    </section>
+                </section>
+
+                <section class="flex-justify-center">
+                    <button class="button" onclick="introducirFiltro()">Introducir Precio Límite</button>
+                    <button class="button" onclick="ordenarPorPrecio()">Ordenar</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="content-row">
+            <section class="flex-section flex-column flex-align-center">
+                <section class="title-container">
+                    <section class="title-section">
+                        <h1>Productos Filtrados</h1>
+                    </section>
+                </section>
+                <section class="text-container">
+                    <section class="text-section text-section-right">
+                        <ul id="listaProductos"></ul>
                     </section>
                 </section>
             </section>
