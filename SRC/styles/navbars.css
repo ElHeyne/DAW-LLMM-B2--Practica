@@ -1,4 +1,4 @@
-#top-nav-container{
+#top-nav-container {
     display: block;
     margin-top: 22px;
     margin-bottom: 22px;
@@ -7,31 +7,31 @@
     transition: all 0.3s;
 }
 
-#top-nav-container.modo-claro{
+#top-nav-container.modo-claro {
     background-color: var(--clear-dark-gray);
     border-bottom: 1px solid var(--clear-dark-gray);
 }
 
-.top-nav-section{
+.top-nav-section {
     width: 100%;
-    display:flex;
+    display: flex;
     margin: 0 auto;
     padding: 1rem;
     max-width: 1200px;
 }
 
-#top-nav-container ul{
+#top-nav-container ul {
     list-style: none;
     margin-top: 19px;
     height: 29px;
 }
 
-#top-nav-container ul li{
+#top-nav-container ul li {
     display: inline-block;
     margin-left: 2.5rem;
 }
 
-#bottom-nav-container{
+#bottom-nav-container {
     display: block;
     position: sticky;
     bottom: 100%;
@@ -41,22 +41,22 @@
     transition: all 0.3s;
 }
 
-#bottom-nav-container.modo-claro{
+#bottom-nav-container.modo-claro {
     background-color: var(--clear-dark-gray);
     border-bottom: 1px solid var(--clear-light-gray);
 }
 
-.bottom-nav-section{
+.bottom-nav-section {
     width: 100%;
     justify-content: center;
     align-items: center;
-    display:flex;
+    display: flex;
     margin: 0 auto;
     padding: 1rem;
     max-width: 1200px;
 }
 
-.bottom-nav-section ul{
+.bottom-nav-section ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -68,26 +68,27 @@
 }
 
 @media screen and (max-width: 768px) {
-    
-    #top-nav-container ul{
+
+    #top-nav-container ul {
         display: flex;
         transition: height 0.3s ease;
         padding: 0;
         width: 95dvw;
         justify-content: space-evenly;
-        margin-bottom: 0; /*Elimina espacio inecesario*/
+        margin-bottom: 0;
+        /*Elimina espacio inecesario*/
     }
-    
-    #top-nav-container ul li{
+
+    #top-nav-container ul li {
         display: inline-block;
         /*margin:0 0.7em;*/
         margin: 0 .8dvw;
         height: 20px;
     }
 
-    .top-nav-section{
+    .top-nav-section {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
@@ -95,9 +96,9 @@
     }
 }
 
-@media screen and (max-width: 400px){
-    
-    #top-nav-container ul{
+@media screen and (max-width: 400px) {
+
+    #top-nav-container ul {
         transition: height 0.3s ease;
         margin: 0.5dvh;
         height: 10px;
@@ -106,7 +107,7 @@
 
 
 /*Icono Cambio de Tema*/
-.bx{
+.bx {
     color: white;
     transition: all .3s;
 }

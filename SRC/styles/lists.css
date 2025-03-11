@@ -1,10 +1,10 @@
-ul{
-    color:white;
+ul {
+    color: white;
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     transition: all 0.3s;
 }
 
-ul.modo-claro{
+ul.modo-claro {
     color: black;
 }

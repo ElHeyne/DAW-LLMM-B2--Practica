@@ -18,7 +18,8 @@ body.modo-claro {
 /*Declaración del estilo header. Tipo bloque para ocupar todo el ancho de la ventana con margenes para el contenido.*/
 header {
     display: block;
-    position: sticky; /*Habilita ver el header on scroll*/
+    position: sticky;
+    /*Habilita ver el header on scroll*/
     top: 0px;
     z-index: 10;
 }
@@ -35,20 +36,20 @@ footer {
     transition: all 0.3s;
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--light-gray);
 }
 
-.button.modo-claro{
+.button.modo-claro {
     background-color: var(--clear-dark-gray);
     color: black;
 }
 
-.button.modo-claro:hover{
+.button.modo-claro:hover {
     background-color: var(--clear-light-gray);
 }
 
-.btn-full-width{
+.btn-full-width {
     width: 100%;
     margin: 0 10px;
 }

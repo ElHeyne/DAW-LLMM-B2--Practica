@@ -1,4 +1,4 @@
-table{
+table {
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     width: 100%;
@@ -9,11 +9,11 @@ table{
     transition: all 0.3s;
 }
 
-table.modo-claro{
+table.modo-claro {
     border: 2px solid var(--clear-dark-gray);
 }
 
-th{
+th {
     font-family: "Slackey", serif;
     font-size: 1.5rem;
     font-weight: lighter;
@@ -25,26 +25,26 @@ th{
     transition: all 0.3s;
 }
 
-th.modo-claro{
+th.modo-claro {
     color: black;
     background-color: var(--clear-dark-gray);
     border: 1px solid var(--clear-dark-gray);
 }
 
-td{
+td {
     padding: 8px;
     background-color: var(--dark-yellow);
     border: 1px solid var(--dark-gray);
     transition: all 0.3s;
 }
 
-td.modo-claro{
+td.modo-claro {
     color: black;
     background-color: var(--clear-dark-yellow);
     border: 1px solid var(--clear-dark-yellow);
 }
 
-.menu-table{
+.menu-table {
     font-size: 1rem;
     color: white;
     width: 30%;
@@ -52,11 +52,11 @@ td.modo-claro{
     transition: all 0.3s;
 }
 
-.menu-table.modo-claro{
+.menu-table.modo-claro {
     color: black;
 }
 
-.menu-table th{
+.menu-table th {
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -68,12 +68,12 @@ td.modo-claro{
     transition: all 0.3s;
 }
 
-.menu-table th.modo-claro{
+.menu-table th.modo-claro {
     background-color: var(--clear-dark-gray);
     border: 5px solid var(--clear-light-gray);
 }
 
-.menu-table td{
+.menu-table td {
     color: var(--dark-gray);
     font-family: "Lexend", Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -83,32 +83,32 @@ td.modo-claro{
     transition: all 0.3s;
 }
 
-.menu-table td.modo-claro{
+.menu-table td.modo-claro {
     background-color: var(--clear-dark-yellow);
     border: 5px solid var(--clear-light-gray);
 }
-    
+
 
 @media screen and (max-width: 768px) {
-    table{
-        width: 80%;        
+    table {
+        width: 80%;
     }
 
-    .menu-table{
+    .menu-table {
         width: 80%;
         min-width: 0px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    table{
+    table {
         font-size: small;
     }
 }
 
 /*Elimina la tabla a partir de cierta resuloción*/
-@media screen and (max-width: 546px){
-    table{
-        display:none;
+@media screen and (max-width: 546px) {
+    table {
+        display: none;
     }
 }

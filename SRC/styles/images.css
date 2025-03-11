@@ -1,4 +1,4 @@
-.logo{
+.logo {
     background: url(/SRC/resources/general/big-logo.png) no-repeat;
     width: 70px;
     height: 70px;
@@ -7,8 +7,8 @@
     overflow: hidden;
 }
 
-.footer-icons{
-    width:40px;
+.footer-icons {
+    width: 40px;
     height: auto;
     text-indent: -9999px;
     background-size: cover;
@@ -16,58 +16,58 @@
     transition: all 0.15s;
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
     transform: scale(1.2);
 }
 
-.interactable-image{
+.interactable-image {
     margin: 2rem;
 }
 
-    .interactable-image img{
-        width: 600px;
-        transition: all 0.15s;
-        text-indent: -9999px;
-        background-size: cover;
-        overflow: hidden;
-    }
+.interactable-image img {
+    width: 600px;
+    transition: all 0.15s;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
 
-    .interactable-image img:hover{
-        transform: scale(1.1);
-        border-radius: 1.5rem;
-        text-indent: -9999px;
-        background-size: cover;
-        overflow: hidden;
-    }
+.interactable-image img:hover {
+    transform: scale(1.1);
+    border-radius: 1.5rem;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
 
-.big-interactable-image{
+.big-interactable-image {
     margin: 2rem;
     width: 100%;
     max-width: 1000px;
 }
 
-    .big-interactable-image img{
-        width: 100%;
-        transition: all 0.15s;
-        text-indent: -9999px;
-        background-size: cover;
-        overflow: hidden;
-    }
+.big-interactable-image img {
+    width: 100%;
+    transition: all 0.15s;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
 
-    .big-interactable-image img:hover{
-        transform: scale(1.05);
-        border-radius: 1.5rem;
-        text-indent: -9999px;
-        background-size: cover;
-        overflow: hidden;
-    }
+.big-interactable-image img:hover {
+    transform: scale(1.05);
+    border-radius: 1.5rem;
+    text-indent: -9999px;
+    background-size: cover;
+    overflow: hidden;
+}
 
-.image-container img{
+.image-container img {
     width: 300px;
 }
 
 @media screen and (max-width: 768px) {
-    .logo{
+    .logo {
         background: url(/SRC/resources/general/small-logo.png) no-repeat;
         height: 70px;
         min-width: 136px;
@@ -80,22 +80,23 @@
 }
 
 @media screen and (max-width: 768px) {
-    .image-container img{
+    .image-container img {
         width: 70dvw;
         height: auto;
         margin: 0.5rem 0;
     }
-    .interactable-image img{
+
+    .interactable-image img {
         width: 70dvw;
         height: auto;
         text-indent: -9999px;
-        background-size:auto;
+        background-size: auto;
         ;
     }
 }
 
-@media screen and (max-width: 400px){
-    .logo{
+@media screen and (max-width: 400px) {
+    .logo {
         background: url(/SRC/resources/general/small-logo.png);
         min-height: 54px;
         min-width: 105px;
@@ -104,4 +105,5 @@
         text-indent: -9999px;
         background-size: cover;
         overflow: hidden;
-    }}
+    }
+}
