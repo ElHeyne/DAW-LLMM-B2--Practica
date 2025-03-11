@@ -43,6 +43,7 @@
 
     <!--JavaScript Externo-->
     <script src="scripts/modo_claro_oscuro.js" defer></script>
+    <script src="scripts/carrusel.js" defer></script>
 
     <title>Información</title>
 </head>
@@ -107,6 +108,21 @@
                     <section class="title-section">
                         <h1 class="h1-center">PARA VER LA FÓRMULA SECRETA</h1>
                     </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="content-row">
+            <section class="flex-section flex-column flex-center">
+                <section class="title-container">
+                    <section class="title-section">
+                        <h1 class="h1-center">Ladrón del Mes</h1>
+                    </section>
+                </section>
+                <section id="carrusel-container" class="flex-section flex-justify-center">
+                    <button class="btn" onclick="carruselAnterior()">⬅️ Anterior</button>
+                    <img id="carrImg" style="height: 450px; width: 450px; object-fit: cover; object-position: center;" src="" alt="Imagen del carrusel">
+                    <button class="btn" onclick="carruselSiguiente()">Siguiente ➡️</button>
                 </section>
             </section>
         </section>
