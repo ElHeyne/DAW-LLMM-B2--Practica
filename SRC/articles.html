@@ -46,6 +46,7 @@
     <script src="scripts/modo_claro_oscuro.js" defer></script>
     <script src="scripts/array_objetos.js" defer></script>
     <script src="scripts/hover-cambio-color.js" defer></script>
+    <script src="scripts/ampliar_img.js" defer></script>
 
     <title>Información</title>
 </head>
@@ -78,7 +79,7 @@
             <section class="flex-section flex-reversed">
                 <article class="side-title-container">
                     <section class="image-container image-container-no-top-padding">
-                        <img src="resources/article_elements/krusty_krab_menu.png" alt="Menú del Crustaceo Crujiente">
+                        <img id="miniImg" style="transition: all 0.3s;" src="resources/article_elements/krusty_krab_menu.png" alt="Menú del Crustaceo Crujiente" onclick="ampliarImg()">
                     </section>
                 </article>
                 <section class="text-container text-reverse">

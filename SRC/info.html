@@ -135,10 +135,9 @@
     <!--Formulario de registro-->
     <section class="flex-section flex-justify-center">
         <section class="content-row">
-            <form action="#" class="form-registro">
+            <form action="#" class="form-registro" onsubmit="validarForm()">
                 <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required
-                    pattern="^[a-z0-9._\/\-]{4,40}$">
+                <input type="text" id="nombre" name="nombre" size="40" minlength="4" maxlength="40" required>
                 <br>
                 <label for="email">E-mail: </label>
                 <input type="text" id="email" name="email" size="40" required>
@@ -161,6 +160,31 @@
             </form>
         </section>
     </section>
+
+    <script>
+        function validarForm() {
+            let nom = document.getElementById("nombre").value;
+            const patronNom = /^[a-z0-9./-]{4,40}$/;
+            let mail = document.getElementById("email").value
+            const patronMail = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+        
+        
+            if (nom.length < 4 || nom.length > 40) {
+                alert("El nombre debe tener entre 4 y 40 caracteres.");
+                return false;
+            }
+            else if(!patronNom.test(nom)) {
+                alert("El nombre no debe contener caracteres especiales");
+                return false;
+            }
+        
+            if (!patronMail.test(mail)) {
+                alert("El formato del email es incorrecto");
+                return false
+            }
+            return true;
+        }
+    </script>
 
     <!--Formulario de comentarios-->
     <section class="flex-section flex-justify-center">

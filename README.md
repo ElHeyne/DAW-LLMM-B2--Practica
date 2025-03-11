@@ -128,6 +128,34 @@ Se usa muy principalmente el recurso de las clases para diferenciar elementos en
 
 En los archivos donde es necesario se aplican las media querys necesarias.
 
+### Estructura JavaScript
+El proyecto mezcla scripts externos como scripts dentro del html.
+
+Cada uno se muestra aqui:
+1. Definir una estructura de datos en JavaScript utilizando un array de objetos.
+   - Se usa para mostrar los productos filtrados al final de la pagina de menú. El archivo es: array_objetos.js
+
+2. Implementar un efecto visual que permita mostrar/ocultar un elemento de la web.
+   - Se encuentra en la pagina de info para ocultar y mostrar comentarios.
+
+3. Crear un botón o interruptor que permita alternar entre un modo claro y un modo oscuro para la web.
+   - Se encuentra en todas las paginas.
+
+4. Comentarios dimanicos en la web.
+   - Se encuentran en la pestaña de info, al final. Contiene un formularios y varios botones de interacción. Su archivo es: comentarios.js
+
+5. Cambiar dinámicamente el estilo de un elemento al interactuar con él
+   - Este comentario se le aplica a todos los elementos del menú, al pasar el ratón sobre ellos. Su archivo es: hover-cambio-color.js
+
+6. Crear un banner de imágenes o textos que se desplace automáticamente o con la ayuda de botones (carrusel o slider).
+   - Se encuentra en la pagina de Fórmula secreta, al final, y muestra al ladrón del mes. Su archivo es: carrusel.js
+
+7. Mostrar imágenes en miniatura que al hacer clic se amplíen.
+   - Este se aplica a la imagen del menú en la pestaña menú.
+
+8. Valida los campos de un formulario de la web, pero utilizando una función de JavaScript.
+   - Este se aplica en el formulario de info, para mandar tu respuesta de correo electronico y contraseña.
+
 ## Capturas de Resoluciones
 ### Escritorio o PC
 ![Imagen de Ejemplo](<SRC/resources/markdown/Captura de pantalla 2024-11-26 210402.png>)
