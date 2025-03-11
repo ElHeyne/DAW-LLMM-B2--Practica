@@ -1,5 +1,6 @@
-//1.Array de objetos
-const platos = [
+let ordenAscendente = true; // Control de Orden
+
+const platos = [ // Array de Objetos
     {
         idPlato: 1,
         nombrePlato: "Burguer Cangreburguer",
@@ -38,38 +39,36 @@ const platos = [
     },
 ]
 
-//Función para introducir el filtro del precio
 function introducirFiltro() {
-    var filtroPrecio = parseFloat(prompt("Introduce el precio máximo"))
+    var filtroPrecio = parseFloat(prompt("Introduce el precio máximo")) // Se pide un precio para filtrar
     filtrarPorPrecioMenor(filtroPrecio);
 }
-//Función para sacar el nombre de los platos con un precio inferior al indicado
+
 function filtrarPorPrecioMenor(precio) {
-    let lista=document.getElementById("listaProductos");
+    let lista=document.getElementById("listaProductos"); // Se obtiene y limpia la lista para introducir nuevos datos
     lista.innerHTML = "";
 
-    for (let i = 0; i < platos.length; i++) {
-        if (precio > platos[i].precioEstandar) {
-            const li = document.createElement("li");
-            li.textContent = platos[i].precioEstandar + " WB" + " " + platos[i].nombrePlato
-            lista.appendChild(li)
-            console.log(platos[i].nombrePlato)
-        }
-    }
+    platos.forEach(plato => {if(plato.precioEstandar <= precio){ // Usando el limite pedido anteriormente se rellena el elemento ul, lista del html
+        let li=document.createElement("li");
+        li.textContent = plato.precioEstandar + " WB" + " " + plato.nombrePlato;
+        lista.appendChild(li);
+    }})
 }
 
 function ordenarPorPrecio() {
-    let lista=document.getElementById("listaProductos");
+    let lista = document.getElementById("listaProductos"); // Se guarda la lista original del html
+    let platos = Array.from(lista.children); // Se guardan los platos (li del ul)
+
+    let platosOrdenados = platos.map(plato => { // usando una funcion flecha se crea un array que guarda un objeto con el precio del objeto original y su contenido, copiado de los hijos
+        let texto = plato.textContent;
+        let precio = parseFloat(texto.split(" WB")[0]);
+        return { precio: precio, elemento: plato };
+    });
+
+    platosOrdenados.sort((a, b) => ordenAscendente ? a.precio - b.precio : b.precio - a.precio); // Se usa el precio extraido anteriormente para ordenar este nuevo array
+
     lista.innerHTML = "";
+    platosOrdenados.forEach(plato => lista.appendChild(plato.elemento)); // Se vuelve a dibujar el nuevo array teniendo en cuenta la lista copiada y ordenada
 
-    let platosOrdenados = platos.slice().sort((a, b) => a.precioEstandar - b.precioEstandar); 
-
-    for (let i = 0; i < platosOrdenados.length; i++) {
-        if (precio > platos[i].precioEstandar) {
-            const li = document.createElement("li");
-            li.textContent = platos[i].precioEstandar + " WB" + " " + platos[i].nombrePlato
-            lista.appendChild(li)
-            console.log(platos[i].nombrePlato)
-        }
-    }
+    ordenAscendente = !ordenAscendente;
 }
